@@ -49,8 +49,57 @@ public class Player : MonoBehaviour
         {
             secondsTillFire = fireRate;
 
-           GameObject created =  Instantiate(projectile, transform.position + transform.forward * 1, transform.rotation * Quaternion.Euler(90, 0, 0));
+            //GameObject created =  Instantiate(projectile, transform.position + transform.forward * 1, transform.rotation * Quaternion.Euler(90, 0, 0));
+            if(Input.GetKey("1"))
+            {
+                Shoot(transform.position, transform.forward);
+            }
 
+            if (Input.GetKey("2"))
+            {
+                Shoot(transform.position, -transform.forward);
+            }
+
+            if (Input.GetKey("3"))
+            {
+                Shoot(transform.position, transform.right);
+            }
+
+            if (Input.GetKey("4"))
+            {
+                Shoot(transform.position, -transform.right);
+            }
+
+            else if (Input.GetKey("5"))
+            {
+                Shoot(transform.position, transform.forward);
+                Shoot(transform.position, -transform.forward);
+            }
+
+            if (Input.GetKey("6"))
+            {
+                Shoot(transform.position, transform.right);
+                Shoot(transform.position, -transform.right);
+            }
+
+            if (Input.GetKey("7"))
+            {
+                Shoot(transform.position, transform.forward);
+                Shoot(transform.position, -transform.forward);
+                Shoot(transform.position, transform.right);
+                Shoot(transform.position, -transform.right);
+            }
         }
+    }
+
+    GameObject Shoot(Vector3 pos, Vector3 dir)
+    {
+        Quaternion rot = Quaternion.FromToRotation(Vector3.up, dir);
+
+        GameObject created = Instantiate(projectile, pos + dir * 2, rot);
+
+        created.GetComponent<Projectile>().direction = dir;
+
+        return gameObject;
     }
 }
