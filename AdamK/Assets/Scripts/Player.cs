@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public float acceleration = 3;
     public float speed = 2;
     public float turnspeed = 3;
-    public float firerate = 0.1f;
+    public float firerate = 1f;
     public GameObject projectile;
 
     float secondstillfire = 0;
@@ -57,7 +57,23 @@ public class Player : MonoBehaviour
         {
             secondstillfire = firerate;
 
-            GameObject created = Instantiate(projectile, transform.position + transform.forward * 2, transform.rotation * Quaternion.Euler(90, 0, 0));
+            
+            Shoot(transform.position, transform.forward);
+            Shoot(transform.position, transform.forward + (transform.right * 0.2f));
+            Shoot(transform.position, transform.forward - (transform.right * 0.2f));
+            Shoot(transform.position, transform.forward + (transform.right * 0.4f));
+            Shoot(transform.position, transform.forward - (transform.right * 0.4f));
         }
+    }
+
+    GameObject Shoot(Vector3 pos, Vector3 dir)
+    {
+        Quaternion rot = Quaternion.FromToRotation(Vector3.up, dir);
+
+        GameObject created = Instantiate(projectile, pos + dir * 2, rot);
+
+        created.GetComponent<Projectile>().direction = dir;
+
+        return gameObject;
     }
 }
