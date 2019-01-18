@@ -22,8 +22,6 @@ GameObject:
   - component: {fileID: 33771449378170980}
   - component: {fileID: 23523272283932802}
   - component: {fileID: 136417026548011380}
-  - component: {fileID: 54233136588100302}
-  - component: {fileID: 114952468754772532}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -160,35 +158,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1863867851700830}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54233136588100302
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1792703522932558}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!114 &114952468754772532
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1792703522932558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a20aaff1e3a4ba14ea764060e588857d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Timer: 100
-  direction: {x: 0, y: 0, z: 0}
-  speed: 10
 --- !u!135 &135189137679484836
 SphereCollider:
   m_ObjectHideFlags: 1
