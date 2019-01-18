@@ -9,15 +9,15 @@ public class enemyscript : MonoBehaviour {
     GameObject enemy;
 
     public float sideSpeed = 5;
-    public float moveTimer = 5;
-    public float tempMovetimer = 1;
+    float moveTimer = 5;
+    public float sideMoveTime = 1;
     public float downAmountPerTimer = 3f;
     
 	void Start ()
     {
         rigid = GetComponent<Rigidbody>();
         rigid.velocity = new Vector3 (sideSpeed,0,0);
-        moveTimer = tempMovetimer;
+        moveTimer = sideMoveTime;
 	}
 
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class enemyscript : MonoBehaviour {
         if (moveTimer <= 0)
         {
             // Reset timer
-            moveTimer = 1;
+            moveTimer = sideMoveTime;
             // Move down
             transform.position -= Vector3.up * downAmountPerTimer;
             // Flip (negate) velocity

@@ -5,16 +5,21 @@ using UnityEngine;
 public class sheilds : MonoBehaviour {
 
     // Use this for initialization
-    int health = 3;
-    private void OnCollisionEnter(Collision collision)
+    public int health = 3;
+
+    private void OnTriggerEnter(Collider other)
     {
         // Check if the collision object is a projecttile
-        if(collision.gameObject.name == "projectile(Clone)")
+        if(other.gameObject.name == "projectile(Clone)")
         {
             health--;
             if (health <= 0) Destroy(gameObject);
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
         }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        OnTriggerEnter(collision.collider);
     }
     void Start ()
     {

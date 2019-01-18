@@ -8,9 +8,9 @@ public class Playerdeath : MonoBehaviour
 
     Vector3 startPosition;
 
-    private void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.name == "EnemyProjectile(Clone)")
+        if (other.gameObject.name == "EnemyProjectile(Clone)")
         {
             --lives;
             if (lives <= 0)
@@ -19,6 +19,10 @@ public class Playerdeath : MonoBehaviour
             }
             transform.position = startPosition;
         }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        OnTriggerEnter(collision.collider);
     }
 
 
