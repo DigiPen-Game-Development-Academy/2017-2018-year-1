@@ -11,7 +11,7 @@ public class enemyscript : MonoBehaviour {
     public float sideSpeed = 5;
     public float moveTimer = 5;
     public float tempMovetimer = 1;
-    public float downAmountPerTimer = 0.1f;
+    public float downAmountPerTimer = 3f;
     
 	void Start ()
     {
