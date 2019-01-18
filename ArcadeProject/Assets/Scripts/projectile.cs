@@ -19,5 +19,7 @@ public class projectile : MonoBehaviour
 	void Update ()
     {
         rigidbody.velocity = direction * speed;
+
+
 	}
 }
