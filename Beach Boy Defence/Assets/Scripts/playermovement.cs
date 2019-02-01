@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class playermovement : MonoBehaviour
 {
-    Rigidbody rigid;
+    Rigidbody2D rigid;
 	// Use this for initialization
 	void Start ()
     {
-        rigid = GetComponent<Rigidbody>();
+        rigid = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
