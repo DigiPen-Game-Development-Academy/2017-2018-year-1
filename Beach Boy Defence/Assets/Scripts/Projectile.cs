@@ -7,13 +7,13 @@ public class Projectile : MonoBehaviour
     [HideInInspector]
     public Vector3 direction = Vector3.zero;
     [HideInInspector]
-    public float speed = 7;
-    Rigidbody rigid;
+    public float speed = 12;
+    Rigidbody2D rigid;
 
 	// Use this for initialization
 	void Start ()
     {
-        rigid = GetComponent<Rigidbody>();
+        rigid = GetComponent<Rigidbody2D>();
     }
 	
 	// Update is called once per frame
