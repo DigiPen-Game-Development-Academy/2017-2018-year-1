@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class Playershoot : MonoBehaviour
 {
-    public GameObject Projectile;
+    public GameObject projectile;
     float firerate = 2;
-    Vector3 pos;
-    Vector3 dir;
+    float speed = 5;
+    private Vector3 pos;
+    private Vector3 dir;
    
    
 
@@ -25,15 +26,18 @@ public class Playershoot : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0) && firerate <= 0)
         {
             firerate = 3;
-            shoot(pos,dir);
+            shoot(pos , dir);
         }       
 	}
 
     GameObject shoot(Vector3 position, Vector3 direction)
     {
-        Quaternion rot = new Quaternion(direction.x, direction.y, direction.z, 1);
-        //GameObject create = Instantiate(Projectile, transform.forward +);
-        //create = GetComponent<projectile>() + direction * speed;
+        
+        Quaternion rot = Quaternion.FromToRotation(Vector3.forward, direction);
+        GameObject create = Instantiate(projectile, transform.forward + transform.position * 2,rot);
+        create.GetComponent<Projectile>().direction = direction;
+        create.GetComponent<Projectile>().speed = speed;
+        //create = GetComponent<projectile>() = direction * speed;
         return gameObject;
     }
 }

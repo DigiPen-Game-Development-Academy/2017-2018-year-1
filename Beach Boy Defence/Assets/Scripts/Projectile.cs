@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class projectile : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
     [HideInInspector]
-    Vector3 direction = Vector3.zero;
-    float speed = 7;
+    public Vector3 direction = Vector3.zero;
+    [HideInInspector]
+    public float speed = 7;
     Rigidbody rigid;
 
 	// Use this for initialization
