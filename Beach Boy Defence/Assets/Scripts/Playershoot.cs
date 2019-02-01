@@ -6,10 +6,10 @@ using UnityEngine;
 public class Playershoot : MonoBehaviour
 {
     public GameObject Projectile;
-    float firerate = 3;
+    float firerate = 2;
     Vector3 pos;
     Vector3 dir;
-    float speed = 3;
+   
    
 
 	// Use this for initialization
@@ -29,11 +29,11 @@ public class Playershoot : MonoBehaviour
         }       
 	}
 
-    GameObject shoot( Vector3 position, Vector3 direction)
+    GameObject shoot(Vector3 position, Vector3 direction)
     {
         Quaternion rot = new Quaternion(direction.x, direction.y, direction.z, 1);
-        GameObject create = Instantiate(Projectile, transform.forward + transform.position * 2, Quaternion.Euler(60, 0, 0));
-        create = GetComponent<projectile>() + direction * speed;
+        //GameObject create = Instantiate(Projectile, transform.forward +);
+        //create = GetComponent<projectile>() + direction * speed;
         return gameObject;
     }
 }

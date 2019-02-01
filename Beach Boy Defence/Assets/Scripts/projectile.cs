@@ -18,6 +18,6 @@ public class projectile : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-       transform.right + direction * speed;
+       rigid.velocity = direction * speed;
 	}
 }
