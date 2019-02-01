@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
     int health = 3;
-    public GameObject playerbullet;
+    
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.name == ("Projectile(Clone)"))
+        if(collision.gameObject.GetComponent<Projectile>())
         {
             --health;
-            Destroy(playerbullet);
-        }
-        else if(health == 0)
-        {
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
         }
     }
     // Use this for initialization
@@ -26,6 +22,9 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		
-	}
+        if (health == 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
