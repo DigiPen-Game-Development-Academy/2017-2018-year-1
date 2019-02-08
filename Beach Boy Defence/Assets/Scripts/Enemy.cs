@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour {
+public class Enemy : MonoBehaviour
+{
     int health = 3;
-    
+
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.GetComponent<Projectile>())
@@ -22,7 +23,7 @@ public class Enemy : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if (health == 0)
+        if (health <= 0)
         {
             Destroy(gameObject);
         }

@@ -15,6 +15,15 @@ public class EnemySpawner : MonoBehaviour
         {
             CreateWave();
         }
+        if(GetComponent<Wave>() == false)
+        {
+            float timer = 120;
+            timer -= Time.deltaTime;
+            if(timer <= 0)
+            {
+                CreateWave();
+            }
+        }
     }
 
     void CreateWave()
@@ -26,4 +35,5 @@ public class EnemySpawner : MonoBehaviour
         Instantiate(waveObjects[0]);
         waveObjects.RemoveAt(0);
     }
+
 }

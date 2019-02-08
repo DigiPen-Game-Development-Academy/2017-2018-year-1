@@ -7,7 +7,7 @@ public class Playershoot : MonoBehaviour
 {
     public GameObject projectile;
     float firerate = 2;
-    float speed = 5;
+    float speed = 15;
     public float offset = 2;
    
 
