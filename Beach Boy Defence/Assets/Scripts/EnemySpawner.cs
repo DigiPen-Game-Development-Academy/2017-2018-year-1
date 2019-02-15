@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public List<GameObject> waveObjects;
-
+    GameObject enemy;
     public KeyCode startWaveKey = KeyCode.Tab;
 
     // Update is called once per frame
@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
         }
         if(GetComponent<Wave>() == false)
         {
-            float timer = 120;
+            float timer = 5;
             timer -= Time.deltaTime;
             if(timer <= 0)
             {
@@ -32,7 +32,8 @@ public class EnemySpawner : MonoBehaviour
         {
             return;
         }
-        Instantiate(waveObjects[0]);
+        Instantiate(waveObjects[1]);
+        GameObject create = Instantiate(enemy, transform.position, transform.rotation);
         waveObjects.RemoveAt(0);
     }
 
