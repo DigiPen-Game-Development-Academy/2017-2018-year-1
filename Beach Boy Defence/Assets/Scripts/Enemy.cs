@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    int health = 3;
+    public GameObject coinPrefab;
 
-    private void OnCollisionEnter(Collision collision)
+    int health = 3;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.GetComponent<Projectile>())
+        if(collision.GetComponent<Projectile>())
         {
             --health;
             Destroy(collision.gameObject);
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        OnTriggerEnter2D(collision.collider);
     }
     // Use this for initialization
     void Start ()
@@ -26,6 +31,10 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            if(gameObject == false)
+            {
+                GameObject coin = Instantiate(coinPrefab, transform.position, transform.rotation);
+            }
         }
     }
 }
