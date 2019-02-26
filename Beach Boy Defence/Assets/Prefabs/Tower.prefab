@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4516025455853692}
   - component: {fileID: 212711327648973182}
+  - component: {fileID: 114569095976680074}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -40,6 +41,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114569095976680074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410399643202428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066a3a0ddf53e184682b7bf0ae8196dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
+  timeBetweenShots: 3
+  projectileSpeed: 5
 --- !u!212 &212711327648973182
 SpriteRenderer:
   m_ObjectHideFlags: 1
