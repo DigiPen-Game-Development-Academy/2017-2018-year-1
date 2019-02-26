@@ -1,10 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class DropShadowText : MonoBehaviour
 {
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == ("coin"))
+        {
+
+        }
+    }
+
+    int currentscore = 0;
     public Text textToCopy;
 
     Text ourText;
@@ -20,8 +27,12 @@ public class DropShadowText : MonoBehaviour
     {
 		if (textToCopy)
         {
-            ourText.text = textToCopy.text;
+            ourText.text = "coincount =" + currentscore;
+
+
         }
+        
             
+
 	}
 }

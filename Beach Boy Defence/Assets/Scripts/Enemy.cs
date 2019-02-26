@@ -31,9 +31,9 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
-            if(gameObject == false)
+            if(gameObject)
             {
-                GameObject coin = Instantiate(coinPrefab, transform.position, transform.rotation);
+                GameObject coin = Instantiate(coinPrefab, transform.position, transform.rotation, transform.parent);
             }
         }
     }
