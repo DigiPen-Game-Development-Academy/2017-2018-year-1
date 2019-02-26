@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212674255400708944}
   - component: {fileID: 114099285550398608}
   m_Layer: 0
-  m_Name: Tower (1)
+  m_Name: Tower Mortar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

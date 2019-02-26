@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 212681285184371146}
   - component: {fileID: 114947844536895336}
   m_Layer: 0
-  m_Name: Tower Mortar 1
+  m_Name: Tower Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
