@@ -1,15 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
+
 
 public class playermovement : MonoBehaviour
 {
+    
     Rigidbody2D rigid;
-	// Use this for initialization
-	void Start ()
+    public Text  coincount;
+    int currentscore = 0;                   
+    // Use this for initialization
+    private void OnCollision2DEnter(Collision2D collision)
+    {
+        if(collision.gameObject.name == ("coin"))
+        {
+            currentscore++;
+            coincount.text = "Score: " + currentscore.ToString();
+            Destroy(collision.gameObject);
+        }
+        
+    }
+    void Start ()
     {
         rigid = GetComponent<Rigidbody2D>();
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -29,7 +45,7 @@ public class playermovement : MonoBehaviour
             Vector3 velocity = rigid.velocity;
             velocity.y = 0;
             rigid.velocity = velocity;
-        }
+        } 
         if (Input.GetKey(KeyCode.A))
         {
             Vector3 velocity = rigid.velocity;

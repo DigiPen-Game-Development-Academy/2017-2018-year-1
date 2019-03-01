@@ -10,7 +10,7 @@ public class TowerShoot : MonoBehaviour
     public float timeBetweenShots = 3;
     float timeTillNextShot = 0;
 
-    public float projectileSpeed = 5;
+    public float projectileSpeed = 15;
 
 
     // Use this for initialization

@@ -31,7 +31,7 @@ public class EnemySpawner : MonoBehaviour
         {
             return;
         }
-        Instantiate(waveObjects[0]);
+        Instantiate(waveObjects[0],transform.position,transform.rotation);
         waveObjects.RemoveAt(0);
     }
 

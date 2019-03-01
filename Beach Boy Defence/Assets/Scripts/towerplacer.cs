@@ -1,31 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
+
 
 public class towerplacer : MonoBehaviour
 {
-    public GameObject ui;
+    //public Text goodcoin;
+    //public Text ui;
     public GameObject tower;
-    private void OnCollisionEnter2D(Collision2D collision)
+    bool created;
+    
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collision.gameObject.GetComponent<playermovement>())
+        print("hello");
+        if(collider.gameObject.name == ("Player") && created == false)
         {
-            GameObject create = Instantiate(ui, transform.position, transform.rotation);
+            GameObject create = Instantiate(tower, transform.position, transform.rotation);
+            created = true;
         }
-        
     }
     // Use this for initialization
     void Start ()
     {
-		
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-		if(Input.GetKey(KeyCode.E))
-        {
-
-        }
+		
 	}
 }
