@@ -7,7 +7,7 @@ public class pathing : MonoBehaviour
 {
     Rigidbody rigid;
     int currentindex = 0;
-    float speed = 3;
+    public float speed = 3;
 
     // Use this for initialization
     void Start ()

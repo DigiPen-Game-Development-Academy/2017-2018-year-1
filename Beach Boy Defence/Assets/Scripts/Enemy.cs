@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public GameObject coinPrefab;
 
-    int health = 3;
+    public int health = 3;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.GetComponent<Projectile>())
