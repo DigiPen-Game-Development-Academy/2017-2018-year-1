@@ -3,15 +3,6 @@ using UnityEngine.UI;
 
 public class DropShadowText : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == ("coin"))
-        {
-
-        }
-    }
-
-    int currentscore = 0;
     public Text textToCopy;
 
     Text ourText;
@@ -27,12 +18,7 @@ public class DropShadowText : MonoBehaviour
     {
 		if (textToCopy)
         {
-            ourText.text = "coincount =" + currentscore;
-
-
+            ourText.text = textToCopy.text;
         }
-        
-            
-
 	}
 }
