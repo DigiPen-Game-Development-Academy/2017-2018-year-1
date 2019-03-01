@@ -6,8 +6,9 @@ using UnityEngine;
 public class Playershoot : MonoBehaviour
 {
     public GameObject projectile;
-    float firerate = 2;
-    float speed = 15;
+
+    public float firerate = 0.05f;
+    public float speed = 10;
     public float offset = 2;
    
 
@@ -23,7 +24,7 @@ public class Playershoot : MonoBehaviour
         firerate -= Time.deltaTime;
         if (Input.GetKey(KeyCode.Mouse0) && firerate <= 0)
         {
-            firerate = 3;
+            firerate = 1;
 
             Camera camera = FindObjectOfType<Camera>();
             Vector3 mousePosition = Input.mousePosition;
