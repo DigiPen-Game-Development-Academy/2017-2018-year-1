@@ -31,7 +31,7 @@ public class pathing : MonoBehaviour
             {
                 Vector3 goal = pathComponent.waypoints[currentindex];
                 float distance = Vector3.Distance(transform.position, goal);
-                if (distance <= 0.5f)
+                if (distance <= 0.1f)
                 {
                     currentindex++;
                 }
