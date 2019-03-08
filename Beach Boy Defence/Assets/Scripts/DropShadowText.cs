@@ -18,7 +18,7 @@ public class DropShadowText : MonoBehaviour
     {
 		if (textToCopy)
         {
-            ourText.text = textToCopy.text;
+            textToCopy.text = ourText.text;
         }
 	}
 }
