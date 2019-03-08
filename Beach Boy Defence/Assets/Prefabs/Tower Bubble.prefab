@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1888784769868488, guid: 1924bb6a339cfd247872d8d56724071c, type: 2}
-  timeBetweenShots: 1.5
-  projectileSpeed: 10
+  timeBetweenShots: 0.3
+  projectileSpeed: 5
 --- !u!212 &212333066415522092
 SpriteRenderer:
   m_ObjectHideFlags: 1
