@@ -198,9 +198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1888784769868488, guid: 1924bb6a339cfd247872d8d56724071c, type: 2}
-  maxDistance: 5
-  timeBetweenShots: 0.2
-  projectileSpeed: 5
+  maxDistance: 3
+  timeBetweenShots: 0.4
+  projectileSpeed: 7
   shootSound: {fileID: 8300000, guid: 3246ba50a175b5e428e454df7d6a48f4, type: 3}
 --- !u!212 &212333066415522092
 SpriteRenderer:
