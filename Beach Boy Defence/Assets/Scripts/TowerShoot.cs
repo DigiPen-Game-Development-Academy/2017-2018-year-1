@@ -5,7 +5,7 @@ using UnityEngine;
 public class TowerShoot : MonoBehaviour
 {
     public GameObject projectile;
-
+    public float maxDistance;
 
     public float timeBetweenShots = 3;
     float timeTillNextShot = 0;
@@ -55,11 +55,10 @@ public class TowerShoot : MonoBehaviour
         if (enemies.Count < 1) return null;
 
 
-        Enemy closestSoFar = enemies[0];
-        float closestSquareDistance =
-           Vector3.SqrMagnitude(transform.position - closestSoFar.transform.position); 
+        Enemy closestSoFar = null;
+        float closestSquareDistance = maxDistance * maxDistance;
 
-        for (int i = 1; i < enemies.Count; ++i)
+        for (int i = 0; i < enemies.Count; ++i)
         {
             Enemy current = enemies[i];
             float currentSquareDistance =
