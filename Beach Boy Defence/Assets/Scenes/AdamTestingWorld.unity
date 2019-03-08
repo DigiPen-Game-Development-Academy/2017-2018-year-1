@@ -155,6 +155,52 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c904e8d4c6b16604086efb3c10d38274, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &1193702472
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4264149373616984, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.9172213
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264149373616984, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.6146488
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264149373616984, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.0011599921
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264149373616984, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264149373616984, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264149373616984, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264149373616984, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264149373616984, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369561941471538, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
+      propertyPath: m_Name
+      value: GameObject
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1626858640
 GameObject:
   m_ObjectHideFlags: 0
