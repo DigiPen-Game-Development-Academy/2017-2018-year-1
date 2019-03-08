@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1545425255824018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5043604, y: 1.4094764, z: -0.007168739}
+  m_LocalPosition: {x: 1.39, y: -9.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,6 +56,13 @@ MonoBehaviour:
   - {fileID: 1034781820988004, guid: ab34ea604827eea46b51110b0bce08e4, type: 2}
   - {fileID: 1691501832976460, guid: 9ff5361c2a4d62a45960f3fb549fdadd, type: 2}
   - {fileID: 1096334977687998, guid: a2d53cfde931dd042a2349d7229d7ddf, type: 2}
+  - {fileID: 1433646704251012, guid: 596585e2d50b22141b7104e1138c36b2, type: 2}
+  - {fileID: 1603489896175672, guid: 94df477a1ac8d514c83e7edd2bd7604a, type: 2}
+  - {fileID: 1973094327670992, guid: 17cebcdddae422b4293d1cca29728caa, type: 2}
+  - {fileID: 1296204472856502, guid: fdbfe8ba70f8d4541b6db4b07b0fe77d, type: 2}
+  - {fileID: 1465821714055286, guid: 421267feb2045894f96a2f5857e89979, type: 2}
+  - {fileID: 1895299137560032, guid: d6ae8ce780bae5d46b91fb7bb81093f8, type: 2}
+  - {fileID: 1369561941471538, guid: b50cbee0ae8308343a0ce3aafd32a590, type: 2}
   startWaveKey: 9
 --- !u!212 &212371129984629592
 SpriteRenderer:

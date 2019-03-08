@@ -35,13 +35,22 @@ public class sandcastlehealth : MonoBehaviour
 
             }
 
+
             Camera camera = FindObjectOfType<Camera>();
             if (camera)
             {
                 AudioSource cameraAudio = camera.GetComponent<AudioSource>();
                 if (cameraAudio)
                 {
-                    cameraAudio.PlayOneShot(CastleDamaged);
+                    if (Health <= 0 && AreWeDeadAlready == false)
+                    {
+                        AreWeDeadAlready = true;
+                        cameraAudio.PlayOneShot(CastleDestroyed);
+                    }
+                    else
+                    {
+                        cameraAudio.PlayOneShot(CastleDamaged);
+                    }
                 }
             }
         }
@@ -64,20 +73,6 @@ public class sandcastlehealth : MonoBehaviour
             if (LoseTime <= 0)
             {
                 SceneManager.LoadScene(LoseLevelName);
-            }
-
-            if (AreWeDeadAlready == false)
-            {
-                AreWeDeadAlready = true;
-                Camera camera = FindObjectOfType<Camera>();
-                if (camera)
-                {
-                    AudioSource cameraAudio = camera.GetComponent<AudioSource>();
-                    if (cameraAudio)
-                    {
-                        cameraAudio.PlayOneShot(CastleDestroyed);
-                    }
-                }
             }
         }
         DisplayText.text = "Castle Health: " + Health;

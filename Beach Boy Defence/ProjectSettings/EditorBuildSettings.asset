@@ -4,4 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/KalebPoquetteTestWorld.unity
+    guid: 15b445e66f0321f45bf3503eb2332e33
+  - enabled: 1
+    path: Assets/Scenes/LoseLevel.unity
+    guid: daf50b2d0834b5d40aba0a93b762d911
+  m_configObjects: {}
