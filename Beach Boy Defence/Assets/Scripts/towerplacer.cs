@@ -12,13 +12,6 @@ public class towerplacer : MonoBehaviour
     int limits = 0;
     GameObject createdInterface;
 
-    // In a new script called CreateTowerButton or something like that:
-    // 1) listen for a button click
-    //  1.a) create tower
-    //       GameObject create = Instantiate(tower, transform.position, transform.rotation);
-    //  1.b) destroy button
-    //       Destroy(gameObject);
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider.gameObject.name == ("Player") && createdInterface == null && limits <= 0)
@@ -26,12 +19,11 @@ public class towerplacer : MonoBehaviour
             createdInterface = Instantiate(creationInterface, transform.position, Quaternion.identity);
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collider)
     {
-        if (createdInterface != null)
+        if (collider.gameObject.name == ("Player") && createdInterface != null)
         {
             Destroy(createdInterface);
-            
         }
     }
     // Use this for initialization

@@ -270,9 +270,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1888784769868488, guid: fc784d8eab31d6044b3eedc1bf5e8dec, type: 2}
-  firerate: 0.3
-  speed: 10
-  offset: 2
+  firerate: 0.35
+  speed: 7
+  offset: 1.3
 --- !u!114 &114864573864572530
 MonoBehaviour:
   m_ObjectHideFlags: 1
