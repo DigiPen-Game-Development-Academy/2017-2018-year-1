@@ -8,6 +8,7 @@ public class Playershoot : MonoBehaviour
     public GameObject projectile;
 
     public float firerate = 0.05f;
+    float timeTillFire = 0;
     public float speed = 10;
     public float offset = 2;
    
@@ -21,10 +22,10 @@ public class Playershoot : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        firerate -= Time.deltaTime;
-        if (Input.GetKey(KeyCode.Mouse0) && firerate <= 0)
+        timeTillFire -= Time.deltaTime;
+        if (Input.GetKey(KeyCode.Mouse0) && timeTillFire <= 0)
         {
-            firerate = 1;
+            timeTillFire = firerate;
 
             Camera camera = FindObjectOfType<Camera>();
             Vector3 mousePosition = Input.mousePosition;

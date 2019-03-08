@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
 
     public GameObject coinPrefab;
 
+    public AudioClip deathSound;
+
     public int health = 3;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -34,10 +36,14 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
-            var deathSound = GetComponent<AudioSource>();
-            if (deathSound)
+            Camera camera = FindObjectOfType<Camera>();
+            if (camera)
             {
-                deathSound.Play();
+                AudioSource cameraAudio = camera.GetComponent<AudioSource>();
+                if (cameraAudio)
+                {
+                    cameraAudio.PlayOneShot(deathSound);
+                }
             }
 
             Destroy(gameObject);
