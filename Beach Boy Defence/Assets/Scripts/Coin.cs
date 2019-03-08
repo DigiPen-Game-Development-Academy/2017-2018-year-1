@@ -5,7 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour {
 
     // time till destroy
-    float timer = 3;
+    public float timer = 3;
     // Use this for initialization
     void Start ()
     {	

@@ -8,18 +8,18 @@ public class playermovement : MonoBehaviour
 {
     
     Rigidbody2D rigid;
-    //public Text  coincount;
-    //int currentscore = 0;
-    private void OnCollision2DEnter(Collision2D collision)
-    {
-        //if(collision.gameObject.name == ("coin"))
-        //{
-        //    currentscore++;
-        //    coincount.text = "Score: " + currentscore.ToString();
-        //    Destroy(collision.gameObject);
-        //}
-        
-    }
+   
+   //int currentscore = 0;
+   //private void OnCollision2DEnter(Collision2D collision)
+   //{
+   //    if(collision.gameObject.name == ("coin"))
+   //    {
+   //        currentscore++;
+   //        
+   //        Destroy(collision.gameObject);
+   //    }
+   //    
+   //}
     // Use this for initialization
     void Start ()
     {
