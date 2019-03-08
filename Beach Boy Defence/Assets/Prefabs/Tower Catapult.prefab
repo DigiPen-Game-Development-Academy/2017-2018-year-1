@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1888784769868488, guid: 1924bb6a339cfd247872d8d56724071c, type: 2}
-  timeBetweenShots: 3
+  timeBetweenShots: 2
   projectileSpeed: 5
 --- !u!212 &212119518558093158
 SpriteRenderer:

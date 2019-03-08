@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  health: 5
 --- !u!114 &114855752328278388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff903ec096d455468173363956d446c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
 --- !u!114 &114958006592375486
 MonoBehaviour:
   m_ObjectHideFlags: 1
