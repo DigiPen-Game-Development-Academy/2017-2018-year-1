@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    // currency per death
+    int deathcoins = 20;
+
     public GameObject coinPrefab;
 
     public int health = 3;
@@ -31,8 +34,19 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
+            var deathSound = GetComponent<AudioSource>();
+            if (deathSound)
+            {
+                deathSound.Play();
+            }
+
             Destroy(gameObject);
-            if(gameObject)
+
+            // add currency per to currency count
+            var currencyCounter = FindObjectOfType<CoinCounter>();
+            currencyCounter.coincounter += deathcoins;
+
+            if (coinPrefab)
             {
                 GameObject coin = Instantiate(coinPrefab, transform.position, transform.rotation, transform.parent);
             }
