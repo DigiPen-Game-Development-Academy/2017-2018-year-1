@@ -19,10 +19,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4484624296007784}
-  - component: {fileID: 61331479662372428}
-  - component: {fileID: 114709795177904900}
+  - component: {fileID: 61681588638276428}
+  - component: {fileID: 114541864332869312}
   m_Layer: 0
-  m_Name: Towerplacer
+  m_Name: TowerPlaceTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,13 +35,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1797780542408092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 0.01, z: 1.4078423}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.39, y: 0.49, z: -0.25}
+  m_LocalScale: {x: 0.8506529, y: 0.8724645, z: 0.8724645}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61331479662372428
+--- !u!61 &61681588638276428
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -50,7 +50,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -66,7 +66,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114709795177904900
+--- !u!114 &114541864332869312
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -77,4 +77,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a36dd8e7818f04044bddb6b3fdb4c1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tower: {fileID: 1956428181568460, guid: aef98e6a3601fb3429e962a3634f3b02, type: 2}
+  creationInterface: {fileID: 1863538543597976, guid: fef3051ba3ff5d84789ea7e7e04f2655,
+    type: 2}
