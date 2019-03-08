@@ -1,33 +1,85 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class sandcastlehealth : MonoBehaviour
 {
-    public int health = 1;
+    public int Health = 10;
+    int MaxHealth;
+    bool AreWeDeadAlready = false;
+    public Text DisplayText;
+    public float LoseTime = 5;
+    public string LoseLevelName = "LoseLevel";
+    public AudioClip CastleDamaged;
+    public AudioClip CastleDestroyed;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public List<Sprite> DamageStates;
+    SpriteRenderer spriterenderer;
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (collision.gameObject.GetComponent<Enemy>())
+        Enemy enemy = collision.GetComponent<Enemy>();
+        if (enemy)
         {
-            --health;
             Destroy(collision.gameObject);
+
+            Health -= enemy.damageToCastle;
+            if(DamageStates.Count > 0)
+            {
+                float Percentile = ((DamageStates.Count - 1) * Health) / (float)MaxHealth;
+                int index = Mathf.CeilToInt(Percentile);
+                spriterenderer.sprite = DamageStates[index];
+
+            }
+
+            Camera camera = FindObjectOfType<Camera>();
+            if (camera)
+            {
+                AudioSource cameraAudio = camera.GetComponent<AudioSource>();
+                if (cameraAudio)
+                {
+                    cameraAudio.PlayOneShot(CastleDamaged);
+                }
+            }
         }
     }
     // Start is called before the first frame update
     void Start()
     {
-
+        MaxHealth = Health;
+        spriterenderer = GetComponent<SpriteRenderer>();
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (health <= 0)
+        if (Health <= 0)
         {
-            Destroy(gameObject);
+            Health = 0;
+            LoseTime -= Time.deltaTime;
+            if (LoseTime <= 0)
+            {
+                SceneManager.LoadScene(LoseLevelName);
+            }
+
+            if (AreWeDeadAlready == false)
+            {
+                AreWeDeadAlready = true;
+                Camera camera = FindObjectOfType<Camera>();
+                if (camera)
+                {
+                    AudioSource cameraAudio = camera.GetComponent<AudioSource>();
+                    if (cameraAudio)
+                    {
+                        cameraAudio.PlayOneShot(CastleDestroyed);
+                    }
+                }
+            }
         }
+        DisplayText.text = "Castle Health: " + Health;
     }
 }

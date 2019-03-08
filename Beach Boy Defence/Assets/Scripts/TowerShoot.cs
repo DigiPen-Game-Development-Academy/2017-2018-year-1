@@ -12,6 +12,8 @@ public class TowerShoot : MonoBehaviour
 
     public float projectileSpeed = 15;
 
+    public AudioClip shootSound;
+
 
     // Use this for initialization
     void Start()
@@ -33,6 +35,16 @@ public class TowerShoot : MonoBehaviour
     {
         GameObject target = FindBestTarget();
         if (target == null) return;
+
+        Camera camera = FindObjectOfType<Camera>();
+        if (camera)
+        {
+            AudioSource cameraAudio = camera.GetComponent<AudioSource>();
+            if (cameraAudio)
+            {
+                cameraAudio.PlayOneShot(shootSound);
+            }
+        }
 
         timeTillNextShot = timeBetweenShots;
 

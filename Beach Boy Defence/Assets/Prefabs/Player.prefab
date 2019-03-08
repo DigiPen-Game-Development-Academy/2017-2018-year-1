@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1888784769868488, guid: fc784d8eab31d6044b3eedc1bf5e8dec, type: 2}
-  firerate: 0.05
+  firerate: 0.3
   speed: 10
   offset: 2
 --- !u!114 &114864573864572530
@@ -260,7 +260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb31932075e3c5d478dba8837130f968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coincount: {fileID: 0}
 --- !u!212 &212503114228273150
 SpriteRenderer:
   m_ObjectHideFlags: 1

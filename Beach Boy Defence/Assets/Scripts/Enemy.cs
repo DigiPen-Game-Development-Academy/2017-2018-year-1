@@ -5,7 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     // currency per death
-    int deathcoins = 20;
+    public int deathcoins = 20;
+    public int damageToCastle = 1;
 
     public GameObject coinPrefab;
 

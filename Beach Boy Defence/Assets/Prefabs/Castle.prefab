@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4751566075686906}
   - component: {fileID: 212598326106618858}
   - component: {fileID: 82663448926118276}
+  - component: {fileID: 61067336031655986}
+  - component: {fileID: 114108275839040320}
   m_Layer: 0
   m_Name: Castle
   m_TagString: Untagged
@@ -35,12 +37,37 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1227009543700220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6341436, y: 0.35273013, z: -0.0110678235}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.51, y: 6.14, z: -0.0110678235}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61067336031655986
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227009543700220}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0
 --- !u!82 &82663448926118276
 AudioSource:
   m_ObjectHideFlags: 1
@@ -136,6 +163,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114108275839040320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227009543700220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de633af887e5216428144b4d10061ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 10
+  DisplayText: {fileID: 0}
+  LoseTime: 5
+  LoseLevelName: LoseLevel
+  CastleDamaged: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
+  CastleDestroyed: {fileID: 8300000, guid: a25b2ac3b6cdb2c4eb7e20c4d146551e, type: 3}
+  DamageStates:
+  - {fileID: 21300008, guid: 95efd55c35970d541a72b4d05c0ff088, type: 3}
+  - {fileID: 21300006, guid: 95efd55c35970d541a72b4d05c0ff088, type: 3}
+  - {fileID: 21300004, guid: 95efd55c35970d541a72b4d05c0ff088, type: 3}
+  - {fileID: 21300002, guid: 95efd55c35970d541a72b4d05c0ff088, type: 3}
+  - {fileID: 21300000, guid: 95efd55c35970d541a72b4d05c0ff088, type: 3}
 --- !u!212 &212598326106618858
 SpriteRenderer:
   m_ObjectHideFlags: 1
