@@ -610,6 +610,11 @@ Prefab:
       propertyPath: DisplayText
       value: 
       objectReference: {fileID: 2030119809}
+    - target: {fileID: 114108275839040320, guid: 74c1c029b70a6c74db9acbb1bf3eb368,
+        type: 2}
+      propertyPath: LoseTime
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74c1c029b70a6c74db9acbb1bf3eb368, type: 2}
   m_IsPrefabAsset: 0
@@ -749,7 +754,7 @@ Prefab:
     - target: {fileID: 114470722724201786, guid: b26ede5d8347e624db8dbdfc1f0128ab,
         type: 2}
       propertyPath: firerate
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 114470722724201786, guid: b26ede5d8347e624db8dbdfc1f0128ab,
         type: 2}
