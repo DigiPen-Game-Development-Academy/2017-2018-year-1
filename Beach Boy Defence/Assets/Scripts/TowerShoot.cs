@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class TowerShoot : MonoBehaviour
 {
+
+    Animator animator;
+    public string ShootAnimationName;
+
     public GameObject projectile;
     public float maxDistance;
 
@@ -18,23 +22,36 @@ public class TowerShoot : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        animator = GetComponent<Animator>();
         timeTillNextShot = timeBetweenShots;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         timeTillNextShot -= Time.deltaTime;
         if (timeTillNextShot <= 0)
         {
             Shoot();
         }
+
+        bool Animationiscomplete = animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1;
+        bool Correctname = animator.GetCurrentAnimatorStateInfo(0).IsName(ShootAnimationName);
+
+        if (Animationiscomplete && Correctname)
+        {
+            animator.SetBool("SHOOTING", false);
+        }
+
     }
 
     void Shoot()
     {
         GameObject target = FindBestTarget();
         if (target == null) return;
+
+        animator.SetBool("SHOOTING", true);
 
         Camera camera = FindObjectOfType<Camera>();
         if (camera)
