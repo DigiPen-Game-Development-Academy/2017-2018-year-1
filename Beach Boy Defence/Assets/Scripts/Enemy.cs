@@ -12,12 +12,14 @@ public class Enemy : MonoBehaviour
 
     public AudioClip deathSound;
 
-    public int health = 3;
+    public float health = 3;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.GetComponent<Projectile>())
+        Projectile projectile = collision.GetComponent<Projectile>();
+        if (projectile!=null)
         {
-            --health;
+            
+            health-=projectile.Damage;
             Destroy(collision.gameObject);
         }
         
