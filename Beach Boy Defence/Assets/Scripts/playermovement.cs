@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class playermovement : MonoBehaviour
 {
-    
+    public Vector3 MinPosition;
+    public Vector3 MaxPosition;
     Rigidbody2D rigid;
    
    //int currentscore = 0;
@@ -94,5 +95,9 @@ public class playermovement : MonoBehaviour
             velocity.x = 0;
             rigid.velocity = velocity;
         }
+        Vector3 Currentposition = transform.position;
+        Currentposition.x = Mathf.Clamp(Currentposition.x, MinPosition.x, MaxPosition.x);
+        Currentposition.y = Mathf.Clamp(Currentposition.y, MinPosition.y, MaxPosition.y);
+        transform.position = Currentposition;
     }
 }

@@ -721,11 +721,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4490541644655414, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.66
+      value: -3.22
       objectReference: {fileID: 0}
     - target: {fileID: 4490541644655414, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.1
+      value: 3.61
       objectReference: {fileID: 0}
     - target: {fileID: 4490541644655414, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
       propertyPath: m_LocalPosition.z
@@ -760,6 +760,46 @@ Prefab:
         type: 2}
       propertyPath: offset
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114864573864572530, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: MinPosition.x
+      value: -12.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 114864573864572530, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: MaxPosition.x
+      value: 13.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 114864573864572530, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: MaxPosition.y
+      value: 7.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 114864573864572530, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: MaxPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114864573864572530, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: MinPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114864573864572530, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: MinPosition.y
+      value: -4.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 50209909805491926, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: m_Mass
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 50209909805491926, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
