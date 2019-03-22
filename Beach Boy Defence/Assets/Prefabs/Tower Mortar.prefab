@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4301597948912454}
   - component: {fileID: 212674255400708944}
-  - component: {fileID: 114099285550398608}
   - component: {fileID: 82973385159765826}
   m_Layer: 0
   m_Name: Tower Mortar
@@ -39,6 +38,7 @@ GameObject:
   - component: {fileID: 4928937158889028}
   - component: {fileID: 212842501616322844}
   - component: {fileID: 95771590445955876}
+  - component: {fileID: 114963405900404982}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -186,21 +186,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114099285550398608
+--- !u!114 &114963405900404982
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1232523896500500}
+  m_GameObject: {fileID: 1923042628723198}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 066a3a0ddf53e184682b7bf0ae8196dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShootAnimationName: MortarTowerShoot
   projectile: {fileID: 1327164927169174, guid: ea3cf3c05347e3045903502f7359d17b, type: 2}
   maxDistance: 2.8
-  timeBetweenShots: 1
-  projectileSpeed: 7
+  timeBetweenShots: 1.2
+  projectileSpeed: 5
   shootSound: {fileID: 8300000, guid: 935f3161640fde342b5508c25d37f7a0, type: 3}
 --- !u!212 &212674255400708944
 SpriteRenderer:

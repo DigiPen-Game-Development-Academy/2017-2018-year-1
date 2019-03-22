@@ -114,6 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: 0}
   speed: 7
+  Damage: 1
 --- !u!212 &212420293495060762
 SpriteRenderer:
   m_ObjectHideFlags: 1

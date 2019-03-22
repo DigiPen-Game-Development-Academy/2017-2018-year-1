@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4919006124540344}
   - component: {fileID: 212777516123165938}
   - component: {fileID: 95331811766374722}
+  - component: {fileID: 114179537228164640}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -37,7 +38,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4555845415230312}
   - component: {fileID: 212119518558093158}
-  - component: {fileID: 114057110738210992}
   - component: {fileID: 82145132278354110}
   m_Layer: 0
   m_Name: Tower Catapult
@@ -186,17 +186,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114057110738210992
+--- !u!114 &114179537228164640
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1588751758188486}
+  m_GameObject: {fileID: 1348427235054660}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 066a3a0ddf53e184682b7bf0ae8196dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShootAnimationName: 'CatapultTowerShoot '
   projectile: {fileID: 1888784769868488, guid: bbc47ce86a75e5446a01f2c1fa81eb0b, type: 2}
   maxDistance: 3.5
   timeBetweenShots: 0.8

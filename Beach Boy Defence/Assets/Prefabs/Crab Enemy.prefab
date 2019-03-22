@@ -144,7 +144,7 @@ MonoBehaviour:
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
-  health: 5
+  health: 20
 --- !u!114 &114664856348710216
 MonoBehaviour:
   m_ObjectHideFlags: 1
