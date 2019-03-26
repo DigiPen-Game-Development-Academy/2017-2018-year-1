@@ -11,10 +11,12 @@ public class towerplacer : MonoBehaviour
     public GameObject creationInterface;
     public bool nomore = false;
     public GameObject createdInterface;
+    public int coins;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
         var currentcount = FindObjectOfType<CoinCounter>();
+        coins = currentcount.coincounter;
 
         if (collider.gameObject.name == ("Player") && createdInterface == null && currentcount.coincounter >= 30 && nomore == false) 
         {
