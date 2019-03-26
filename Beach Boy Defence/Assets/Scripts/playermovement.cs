@@ -35,9 +35,9 @@ public class playermovement : MonoBehaviour
         {
             Vector3 velocity = rigid.velocity;
             velocity.y += 1;
-            if(velocity.y >= 5)
+            if(velocity.y >= 3)
             {
-                velocity.y = 5;
+                velocity.y = 3;
             }
             rigid.velocity = velocity;
         }
@@ -51,9 +51,9 @@ public class playermovement : MonoBehaviour
         {
             Vector3 velocity = rigid.velocity;
             velocity.x -= -1;
-            if (velocity.x >= -5)
+            if (velocity.x >= -3)
             {
-                velocity.x = -5;
+                velocity.x = -3;
             }
             rigid.velocity = velocity;
         }
@@ -67,9 +67,9 @@ public class playermovement : MonoBehaviour
         {
             Vector3 velocity = rigid.velocity;
             velocity.y -= -1;
-            if (velocity.y >= -5)
+            if (velocity.y >= -3)
             {
-                velocity.y = -5;
+                velocity.y = -3;
             }
             rigid.velocity = velocity;
         }
@@ -83,9 +83,9 @@ public class playermovement : MonoBehaviour
         {
             Vector3 velocity = rigid.velocity;
             velocity.x += 1;
-            if (velocity.x >= 5)
+            if (velocity.x >= 3)
             {
-                velocity.x = 5;
+                velocity.x = 3;
             }
             rigid.velocity = velocity;
         }

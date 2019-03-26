@@ -799,7 +799,22 @@ Prefab:
     - target: {fileID: 50209909805491926, guid: b26ede5d8347e624db8dbdfc1f0128ab,
         type: 2}
       propertyPath: m_LinearDrag
-      value: 22
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212503114228273150, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c58697012c1ab7d45b027ac79f5bb19e,
+        type: 3}
+    - target: {fileID: 4119516489101488, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.309
+      objectReference: {fileID: 0}
+    - target: {fileID: 50209909805491926, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
