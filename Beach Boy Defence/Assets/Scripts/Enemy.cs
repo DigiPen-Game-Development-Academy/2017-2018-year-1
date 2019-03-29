@@ -9,10 +9,12 @@ public class Enemy : MonoBehaviour
     public int damageToCastle = 1;
 
     public GameObject coinPrefab;
-
+    public enemyhealthbar myhealthbar;
     public AudioClip deathSound;
 
     public float health = 3;
+    [HideInInspector]
+    public float maxhealth;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Projectile projectile = collision.GetComponent<Projectile>();
@@ -24,6 +26,8 @@ public class Enemy : MonoBehaviour
                 projectile.Used = true;
                 health -= projectile.Damage;
                 Destroy(collision.gameObject);
+                if (myhealthbar != null)
+                    myhealthbar.sethealthbarscale(health,maxhealth);
             }
         }
         
@@ -35,7 +39,8 @@ public class Enemy : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-		
+        maxhealth = health;
+       
 	}
 	
 	// Update is called once per frame
