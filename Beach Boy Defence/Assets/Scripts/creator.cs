@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class creator : MonoBehaviour {
 
-	// Use this for initialization
+    // Use this for initialization
+    [HideInInspector]
+    public towerplacer towerrid;
 	void Start () {
 		
 	}
