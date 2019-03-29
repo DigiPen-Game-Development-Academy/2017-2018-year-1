@@ -20,7 +20,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4516025455853692}
   - component: {fileID: 212711327648973182}
+<<<<<<< .mine
+  - component: {fileID: 58592696273557754}
+  - component: {fileID: 114950486531074384}
+||||||| .r82
+=======
   - component: {fileID: 114569095976680074}
+>>>>>>> .r227
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -41,6 +47,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< .mine
+--- !u!58 &58592696273557754
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410399643202428}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &114950486531074384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1410399643202428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066a3a0ddf53e184682b7bf0ae8196dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 1888784769868488, guid: 1924bb6a339cfd247872d8d56724071c, type: 2}
+  timeBetweenShots: 3
+  projectileSpeed: 5
+||||||| .r82
+=======
 --- !u!114 &114569095976680074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,6 +93,7 @@ MonoBehaviour:
   projectile: {fileID: 0}
   timeBetweenShots: 3
   projectileSpeed: 5
+>>>>>>> .r227
 --- !u!212 &212711327648973182
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -91,7 +130,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 27ebde1ea2a41de4a8e643339c1338da, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.06674972, g: 0.21119174, b: 0.9433962, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
