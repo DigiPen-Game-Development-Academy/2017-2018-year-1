@@ -10,8 +10,7 @@ public class towerbutton : MonoBehaviour
     
     private void OnMouseDown()
     {
-        //var towerid2 = FindObjectOfType<towerplacer>();
-        //Destroy(towerid2.gameObject);
+       
         if (limit <= 0)
         {
             var currentcount = FindObjectOfType<CoinCounter>();
