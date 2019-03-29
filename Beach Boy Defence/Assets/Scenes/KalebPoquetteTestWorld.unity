@@ -2272,7 +2272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b7111a37c0dc648b186c9e528eb252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coincounter: 0
+  coincounter: 30
 --- !u!1001 &1295830613
 Prefab:
   m_ObjectHideFlags: 0
@@ -3442,7 +3442,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 3, y: 3, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
