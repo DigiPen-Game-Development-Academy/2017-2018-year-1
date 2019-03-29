@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff903ec096d455468173363956d446c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 4.5
 --- !u!114 &114946697822558784
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,7 +156,7 @@ MonoBehaviour:
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
-  health: 10
+  health: 15
 --- !u!212 &212143197778165278
 SpriteRenderer:
   m_ObjectHideFlags: 1

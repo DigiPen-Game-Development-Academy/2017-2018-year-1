@@ -10,6 +10,9 @@ public class Projectile : MonoBehaviour
     public float speed = 12;
     Rigidbody2D rigid;
     public float Damage = 3;
+    [HideInInspector]
+    public bool Used = false;
+    public bool AreaDMG = false;
 
 	// Use this for initialization
 	void Start ()

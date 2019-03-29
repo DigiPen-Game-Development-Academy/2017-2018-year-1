@@ -18,9 +18,13 @@ public class Enemy : MonoBehaviour
         Projectile projectile = collision.GetComponent<Projectile>();
         if (projectile!=null)
         {
-            
-            health-=projectile.Damage;
-            Destroy(collision.gameObject);
+
+            if (projectile.AreaDMG || projectile.Used == false)
+            {
+                projectile.Used = true;
+                health -= projectile.Damage;
+                Destroy(collision.gameObject);
+            }
         }
         
     }

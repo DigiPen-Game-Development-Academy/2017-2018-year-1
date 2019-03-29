@@ -18,17 +18,50 @@ public class TowerShoot : MonoBehaviour
 
     public AudioClip shootSound;
 
+    CircleCollider2D Range;
+
+    
+
+
 
     // Use this for initialization
     void Start()
     {
         animator = GetComponent<Animator>();
+        Range.radius = maxDistance;
         timeTillNextShot = timeBetweenShots;
     }
 
     // Update is called once per frame
     void Update()
     {
+       /* var AllEnemies = FindObjectsOfType<Enemy>();
+
+        bool FoundSomeone = false;
+
+        foreach(var enemy in AllEnemies)
+        {
+            Vector3 MyPosition = transform.position;
+            Vector3 EnemyPosition = enemy.transform.position;
+
+            Vector3 Difference = MyPosition - EnemyPosition;
+
+            float Distance = Difference.magnitude;
+
+            if (Distance > maxDistance)
+            {
+                continue;
+            }
+
+            FoundSomeone = true;
+            break;
+        }
+
+        if (FoundSomeone == false)
+        {
+            animator.SetBool("SHOOTING", false);
+        }
+        */
 
         timeTillNextShot -= Time.deltaTime;
         if (timeTillNextShot <= 0)

@@ -200,8 +200,8 @@ MonoBehaviour:
   ShootAnimationName: 'CatapultTowerShoot '
   projectile: {fileID: 1888784769868488, guid: bbc47ce86a75e5446a01f2c1fa81eb0b, type: 2}
   maxDistance: 3.8
-  timeBetweenShots: 0.9
-  projectileSpeed: 10
+  timeBetweenShots: 0.86
+  projectileSpeed: 14
   shootSound: {fileID: 8300000, guid: 0af5d437b042d3a40a8d756ff31e2a4b, type: 3}
 --- !u!212 &212119518558093158
 SpriteRenderer:
