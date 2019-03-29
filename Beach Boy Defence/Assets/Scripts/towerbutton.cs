@@ -9,17 +9,20 @@ public class towerbutton : MonoBehaviour
     int limit = 0;
     
     private void OnMouseDown()
-    { 
-        if(limit <= 0)
+    {
+        //var towerid2 = FindObjectOfType<towerplacer>();
+        //Destroy(towerid2.gameObject);
+        if (limit <= 0)
         {
             var currentcount = FindObjectOfType<CoinCounter>();
-            var towerid = transform.parent.GetComponent<creator>();
-            var towerid2 = GetComponent<towerplacer>();
+            var Coins = FindObjectOfType<towerplacer>();
+            var towerid = transform.parent.GetComponent<creator>().towerrid;
             GameObject create = Instantiate(towerToCreate, transform.parent.position, transform.rotation);
-            Destroy(towerid2.createdInterface);
+            towerid.nomore = true;
             currentcount.coincounter -= 30;
-            towerid2.nomore = true;
-            limit++;
+            
+            limit += 2;
+            Destroy(transform.parent.gameObject);
         }
       
     }

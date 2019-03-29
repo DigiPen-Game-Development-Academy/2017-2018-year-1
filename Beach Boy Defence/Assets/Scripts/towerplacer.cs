@@ -18,11 +18,12 @@ public class towerplacer : MonoBehaviour
         var currentcount = FindObjectOfType<CoinCounter>();
         coins = currentcount.coincounter;
 
-        if (collider.gameObject.name == ("Player") && createdInterface == null && currentcount.coincounter >= 30 && nomore == false) 
+        if (collider.gameObject.name == ("Player") && createdInterface == null && coins >= 30 && nomore == false) 
         {
             
             createdInterface = Instantiate(creationInterface, transform.position, Quaternion.identity);
-          
+            var Created = createdInterface.GetComponent<creator>();
+            Created.towerrid = this;
         }
     }
     private void OnTriggerExit2D(Collider2D collider)
