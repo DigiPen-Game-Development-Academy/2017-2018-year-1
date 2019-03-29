@@ -7,23 +7,30 @@ public class EnemySpawner : MonoBehaviour
     public List<GameObject> waveObjects;
     public KeyCode startWaveKey = KeyCode.Tab;
     public float timebetweenwaves = 5;
+    float Timer = 0;
 
     // Update is called once per frame
+
+    private void Start()
+    {
+        Timer = timebetweenwaves;
+    }
     void Update()
     {
         if (GetComponent<Wave>() == null)
         {
             
-            timebetweenwaves -= Time.deltaTime;
-            if (timebetweenwaves <= 0)
+            Timer -= Time.deltaTime;
+            if (Timer <= 0)
             {
                 CreateWave();
-                timebetweenwaves = 5;
+                Timer = timebetweenwaves;
             }
         }
         if (Input.GetKeyDown(startWaveKey))
         {
             CreateWave();
+            Timer = timebetweenwaves;
         }
         
     }

@@ -98,7 +98,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 0.8}
   m_EdgeRadius: 0
 --- !u!95 &95868678423084186
 Animator:
@@ -152,11 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65aa91fc3801b54479ce097b61c7edc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathcoins: 20
+  deathcoins: 3
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
-  health: 15
+  health: 17
 --- !u!212 &212143197778165278
 SpriteRenderer:
   m_ObjectHideFlags: 1
