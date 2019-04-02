@@ -18,9 +18,9 @@ public class TowerShoot : MonoBehaviour
 
     public AudioClip shootSound;
 
-    CircleCollider2D Range;
-
     
+
+    public GameObject RangeCircle;
 
 
 
@@ -28,8 +28,14 @@ public class TowerShoot : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        Range.radius = maxDistance;
+        
         timeTillNextShot = timeBetweenShots;
+        if(RangeCircle != null)
+        {
+            Debug.Log("Stuffffff");
+            RangeCircle.transform.localScale = new Vector3(maxDistance, maxDistance, maxDistance);
+        }
+
     }
 
     // Update is called once per frame

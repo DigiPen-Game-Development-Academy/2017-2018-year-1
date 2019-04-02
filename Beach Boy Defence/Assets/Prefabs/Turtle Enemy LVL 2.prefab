@@ -87,7 +87,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1498240578564140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.3, z: 0}
+  m_LocalPosition: {x: -0.35, y: 0.3, z: 0}
   m_LocalScale: {x: 0.7, y: 0.04, z: 1}
   m_Children: []
   m_Father: {fileID: 4093433641061328}
@@ -199,7 +199,7 @@ MonoBehaviour:
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
   myhealthbar: {fileID: 114498013556760582}
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
-  health: 200
+  health: 150
   maxhealth: 0
 --- !u!212 &212472308038328118
 SpriteRenderer:
