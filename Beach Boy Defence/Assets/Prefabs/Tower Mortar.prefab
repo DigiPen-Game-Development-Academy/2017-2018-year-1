@@ -200,7 +200,7 @@ MonoBehaviour:
   ShootAnimationName: MortarTowerShoot
   projectile: {fileID: 1327164927169174, guid: ea3cf3c05347e3045903502f7359d17b, type: 2}
   maxDistance: 2.8
-  timeBetweenShots: 1.1
+  timeBetweenShots: 1.3
   projectileSpeed: 5
   shootSound: {fileID: 8300000, guid: 935f3161640fde342b5508c25d37f7a0, type: 3}
 --- !u!212 &212674255400708944

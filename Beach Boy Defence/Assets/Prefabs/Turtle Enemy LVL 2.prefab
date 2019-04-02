@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1025796927490206}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.095617, y: 1.8955592, z: -0.013899084}
+  m_LocalPosition: {x: 7.707666, y: -0.13363087, z: -0.013899084}
   m_LocalScale: {x: 1.75, y: 1.75, z: 1}
   m_Children:
   - {fileID: 4945041014762198}
@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7, y: 0.5}
   m_EdgeRadius: 0
 --- !u!95 &95620326745340360
 Animator:
@@ -199,7 +199,7 @@ MonoBehaviour:
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
   myhealthbar: {fileID: 114498013556760582}
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
-  health: 100
+  health: 200
   maxhealth: 0
 --- !u!212 &212472308038328118
 SpriteRenderer:
