@@ -624,8 +624,10 @@ MonoBehaviour:
   deathcoins: 6
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 25
+  maxhealth: 0
 --- !u!114 &114281981838082960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -640,8 +642,10 @@ MonoBehaviour:
   deathcoins: 6
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 60
+  maxhealth: 0
 --- !u!114 &114290854683967058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -656,8 +660,10 @@ MonoBehaviour:
   deathcoins: 6
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
+  maxhealth: 0
 --- !u!114 &114318673690783618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -680,7 +686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdef6abd876a1b2478de745087316721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Replacement: {fileID: 1530678368306668, guid: f45d62826537f26449ddd3c8e8c2c1c2,
+  Replacement: {fileID: 1530678368306668, guid: f9fb0e43e08be164eb0d6666cccd8a41,
     type: 2}
 --- !u!114 &114387269934869478
 MonoBehaviour:
@@ -777,7 +783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdef6abd876a1b2478de745087316721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Replacement: {fileID: 1530678368306668, guid: f45d62826537f26449ddd3c8e8c2c1c2,
+  Replacement: {fileID: 1530678368306668, guid: f9fb0e43e08be164eb0d6666cccd8a41,
     type: 2}
 --- !u!114 &114838587045136250
 MonoBehaviour:
@@ -790,7 +796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdef6abd876a1b2478de745087316721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Replacement: {fileID: 1530678368306668, guid: f45d62826537f26449ddd3c8e8c2c1c2,
+  Replacement: {fileID: 1530678368306668, guid: f9fb0e43e08be164eb0d6666cccd8a41,
     type: 2}
 --- !u!114 &114838658781564764
 MonoBehaviour:
@@ -803,7 +809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdef6abd876a1b2478de745087316721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Replacement: {fileID: 1530678368306668, guid: f45d62826537f26449ddd3c8e8c2c1c2,
+  Replacement: {fileID: 1530678368306668, guid: f9fb0e43e08be164eb0d6666cccd8a41,
     type: 2}
 --- !u!114 &114980703254322784
 MonoBehaviour:

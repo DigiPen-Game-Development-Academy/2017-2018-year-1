@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdef6abd876a1b2478de745087316721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Replacement: {fileID: 1530678368306668, guid: f45d62826537f26449ddd3c8e8c2c1c2,
+  Replacement: {fileID: 1530678368306668, guid: f9fb0e43e08be164eb0d6666cccd8a41,
     type: 2}
 --- !u!114 &114289351019881522
 MonoBehaviour:
@@ -659,8 +659,10 @@ MonoBehaviour:
   deathcoins: 3
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 30
+  maxhealth: 0
 --- !u!114 &114313166623810190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -672,7 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdef6abd876a1b2478de745087316721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Replacement: {fileID: 1530678368306668, guid: f45d62826537f26449ddd3c8e8c2c1c2,
+  Replacement: {fileID: 1530678368306668, guid: f9fb0e43e08be164eb0d6666cccd8a41,
     type: 2}
 --- !u!114 &114499707504132310
 MonoBehaviour:
@@ -685,7 +687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdef6abd876a1b2478de745087316721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Replacement: {fileID: 1530678368306668, guid: f45d62826537f26449ddd3c8e8c2c1c2,
+  Replacement: {fileID: 1530678368306668, guid: f9fb0e43e08be164eb0d6666cccd8a41,
     type: 2}
 --- !u!114 &114651533302852366
 MonoBehaviour:
@@ -749,8 +751,10 @@ MonoBehaviour:
   deathcoins: 3
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 30
+  maxhealth: 0
 --- !u!114 &114752446141848922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -775,7 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdef6abd876a1b2478de745087316721, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Replacement: {fileID: 1530678368306668, guid: f45d62826537f26449ddd3c8e8c2c1c2,
+  Replacement: {fileID: 1530678368306668, guid: f9fb0e43e08be164eb0d6666cccd8a41,
     type: 2}
 --- !u!212 &212031613823653968
 SpriteRenderer:
