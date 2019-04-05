@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Wave : MonoBehaviour
 {
+    public Animator myAnimator;
     float wavetime = 120;
     // Use this for initialization
     void Start()

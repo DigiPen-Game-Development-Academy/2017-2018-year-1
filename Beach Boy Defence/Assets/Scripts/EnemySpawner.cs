@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    public Animator WaveTimerAnimator;
+    public string StateName;
     public List<GameObject> waveObjects;
     public KeyCode startWaveKey = KeyCode.Tab;
     public float timebetweenwaves = 5;
@@ -32,7 +34,9 @@ public class EnemySpawner : MonoBehaviour
             CreateWave();
             Timer = timebetweenwaves;
         }
-        
+
+        var fraction = Timer / timebetweenwaves;
+        WaveTimerAnimator.Play(StateName, 0, 1-fraction);
     }
 
     void CreateWave()
