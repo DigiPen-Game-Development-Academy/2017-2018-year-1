@@ -2530,7 +2530,7 @@ Prefab:
     - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
         type: 2}
       propertyPath: timebetweenwaves
-      value: 12
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
         type: 2}

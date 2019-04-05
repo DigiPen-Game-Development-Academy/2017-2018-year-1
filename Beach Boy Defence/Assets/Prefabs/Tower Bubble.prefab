@@ -230,7 +230,7 @@ MonoBehaviour:
   ShootAnimationName: BubbleTowerShoot
   projectile: {fileID: 1888784769868488, guid: 1924bb6a339cfd247872d8d56724071c, type: 2}
   maxDistance: 3.2
-  timeBetweenShots: 0.2
+  timeBetweenShots: 0.17
   projectileSpeed: 14
   shootSound: {fileID: 8300000, guid: 3246ba50a175b5e428e454df7d6a48f4, type: 3}
   RangeCircle: {fileID: 1783132065640954}
