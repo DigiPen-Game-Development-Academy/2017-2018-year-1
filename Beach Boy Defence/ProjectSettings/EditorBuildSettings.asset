@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/winlevel.unity
     guid: e8655bcad0ceb93458edb152f42388b8
+  - enabled: 1
+    path: Assets/Scenes/Tower Info.unity
+    guid: 73a2a039453c5194f8a3336742f97cbd
+  - enabled: 1
+    path: Assets/Scenes/Title Screen Maybe.unity
+    guid: 4be38a926e0a36a41b26b273d970e2a9
   m_configObjects: {}
