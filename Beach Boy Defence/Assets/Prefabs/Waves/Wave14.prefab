@@ -225,6 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4241132036357282}
+  - component: {fileID: 114288518423050506}
   m_Layer: 0
   m_Name: Wave14
   m_TagString: Untagged
@@ -1154,8 +1155,10 @@ MonoBehaviour:
   deathcoins: 15
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 60
+  maxhealth: 0
 --- !u!114 &114039628798397428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1183,8 +1186,10 @@ MonoBehaviour:
   deathcoins: 15
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
+  maxhealth: 0
 --- !u!114 &114058188174617122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1260,8 +1265,10 @@ MonoBehaviour:
   deathcoins: 15
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
+  maxhealth: 0
 --- !u!114 &114188172876263934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1276,8 +1283,10 @@ MonoBehaviour:
   deathcoins: 15
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 25
+  maxhealth: 0
 --- !u!114 &114194361093115224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1304,8 +1313,22 @@ MonoBehaviour:
   deathcoins: 15
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 25
+  maxhealth: 0
+--- !u!114 &114288518423050506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1616415539744938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 136f507281aad704b91c38e55f74cbb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenelevelsender: winlevel
 --- !u!114 &114331424380933326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1331,8 +1354,10 @@ MonoBehaviour:
   deathcoins: 15
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 60
+  maxhealth: 0
 --- !u!114 &114351649103949194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1347,8 +1372,10 @@ MonoBehaviour:
   deathcoins: 15
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
+  maxhealth: 0
 --- !u!114 &114406073418850824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1507,8 +1534,10 @@ MonoBehaviour:
   deathcoins: 15
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 25
+  maxhealth: 0
 --- !u!114 &114654856065297376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1574,8 +1603,10 @@ MonoBehaviour:
   deathcoins: 15
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 60
+  maxhealth: 0
 --- !u!114 &114808786999008488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1623,8 +1654,10 @@ MonoBehaviour:
   deathcoins: 15
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
+  myhealthbar: {fileID: 0}
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
+  maxhealth: 0
 --- !u!114 &114897162583015448
 MonoBehaviour:
   m_ObjectHideFlags: 1
