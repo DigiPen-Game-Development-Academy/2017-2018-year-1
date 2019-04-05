@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class winscreen : MonoBehaviour {
     public string scenelevelsender = "";
+    float timer = 3;
 	// Use this for initialization
 	void Start ()
     {
@@ -15,9 +16,15 @@ public class winscreen : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		if(transform.GetComponentsInChildren<Enemy>().Length <= 0)
+        
+        if(transform.GetComponentsInChildren<Enemy>().Length <= 0)
         {
-            SceneManager.LoadScene(scenelevelsender);
+            timer -= Time.deltaTime; 
+            if (timer <= 0)
+            {
+                SceneManager.LoadScene(scenelevelsender);
+            }
         }
+		
 	}
 }
