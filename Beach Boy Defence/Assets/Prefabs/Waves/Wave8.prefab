@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 114958643034948536}
   - component: {fileID: 95462628907705032}
   - component: {fileID: 114179066687230244}
+  - component: {fileID: 114662230290368210}
   m_Layer: 0
   m_Name: Turtle Enemy (2)
   m_TagString: Untagged
@@ -407,6 +408,7 @@ GameObject:
   - component: {fileID: 114784408463000648}
   - component: {fileID: 95064927763950800}
   - component: {fileID: 114635160499622970}
+  - component: {fileID: 114777154868685140}
   m_Layer: 0
   m_Name: Turtle Enemy (1)
   m_TagString: Untagged
@@ -976,6 +978,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b56384175e36bf1498357c37104ad1f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114662230290368210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1864986273428404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdef6abd876a1b2478de745087316721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Replacement: {fileID: 1605143708919706, guid: 1345e2105d8fe214abec0ff58647c01b,
+    type: 2}
 --- !u!114 &114669915228953686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1014,6 +1029,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Replacement: {fileID: 1530678368306668, guid: f9fb0e43e08be164eb0d6666cccd8a41,
+    type: 2}
+--- !u!114 &114777154868685140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1960821199894466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdef6abd876a1b2478de745087316721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Replacement: {fileID: 1605143708919706, guid: 1345e2105d8fe214abec0ff58647c01b,
     type: 2}
 --- !u!114 &114784408463000648
 MonoBehaviour:
