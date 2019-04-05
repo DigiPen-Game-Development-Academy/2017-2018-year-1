@@ -121,7 +121,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 0.36, y: 0.23}
   m_EdgeRadius: 0
 --- !u!82 &82577229736567088
 AudioSource:
@@ -284,6 +284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb31932075e3c5d478dba8837130f968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MinPosition: {x: 0, y: 0, z: 0}
+  MaxPosition: {x: 0, y: 0, z: 0}
 --- !u!212 &212503114228273150
 SpriteRenderer:
   m_ObjectHideFlags: 1
