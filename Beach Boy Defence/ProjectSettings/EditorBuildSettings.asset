@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title Screen Maybe.unity
     guid: 4be38a926e0a36a41b26b273d970e2a9
+  - enabled: 1
+    path: Assets/Scenes/EasyMode.unity
+    guid: 2946abec5fd01714b90990d17434ce0b
   m_configObjects: {}
