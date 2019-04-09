@@ -7,6 +7,7 @@ public class towerbutton : MonoBehaviour
     public GameObject towerToCreate;
     
     int limit = 0;
+	public GameObject SoundEffect;
     
     private void OnMouseDown()
     {
@@ -17,6 +18,7 @@ public class towerbutton : MonoBehaviour
             var Coins = FindObjectOfType<towerplacer>();
             var towerid = transform.parent.GetComponent<creator>().towerrid;
             GameObject create = Instantiate(towerToCreate, transform.parent.position, transform.rotation);
+			Instantiate(SoundEffect, transform.parent.position, transform.rotation);
             towerid.nomore = true;
             currentcount.coincounter -= 30;
             
