@@ -87,7 +87,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1636769584834912}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.904087, y: -1.0621504, z: -3}
+  m_LocalPosition: {x: -16.850704, y: 0.82920516, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4819836480694994}
@@ -127,7 +127,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1007522361130976}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.8994255, y: 0.25965914, z: -0.013899084}
+  m_LocalPosition: {x: 0, y: 0, z: -0.013899084}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 4749160860741490}
@@ -207,6 +207,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 20
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114386599795197660
 MonoBehaviour:
   m_ObjectHideFlags: 1
