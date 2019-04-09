@@ -674,6 +674,11 @@ Prefab:
       propertyPath: m_Volume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114108275839040320, guid: 74c1c029b70a6c74db9acbb1bf3eb368,
+        type: 2}
+      propertyPath: Health
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74c1c029b70a6c74db9acbb1bf3eb368, type: 2}
   m_IsPrefabAsset: 0
@@ -785,11 +790,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4490541644655414, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.53
+      value: -3.74
       objectReference: {fileID: 0}
     - target: {fileID: 4490541644655414, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.61
+      value: 4.17
       objectReference: {fileID: 0}
     - target: {fileID: 4490541644655414, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
       propertyPath: m_LocalPosition.z
@@ -813,7 +818,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4490541644655414, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114470722724201786, guid: b26ede5d8347e624db8dbdfc1f0128ab,
         type: 2}
@@ -858,7 +863,7 @@ Prefab:
     - target: {fileID: 50209909805491926, guid: b26ede5d8347e624db8dbdfc1f0128ab,
         type: 2}
       propertyPath: m_Mass
-      value: 12
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 50209909805491926, guid: b26ede5d8347e624db8dbdfc1f0128ab,
         type: 2}
@@ -879,6 +884,16 @@ Prefab:
         type: 2}
       propertyPath: m_AngularDrag
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61281364212190136, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 61281364212190136, guid: b26ede5d8347e624db8dbdfc1f0128ab,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b26ede5d8347e624db8dbdfc1f0128ab, type: 2}
@@ -2530,7 +2545,7 @@ Prefab:
     - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
         type: 2}
       propertyPath: timebetweenwaves
-      value: 15
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
         type: 2}
@@ -2652,15 +2667,15 @@ Prefab:
         type: 2}
     - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
         type: 2}
-      propertyPath: waveObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 1636769584834912, guid: 4f4306be4d3932d47a3d89e0aced9895,
-        type: 2}
-    - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
-        type: 2}
       propertyPath: waveObjects.Array.data[19]
       value: 
       objectReference: {fileID: 1594452699128464, guid: 5cacc4267e5ec5e46852f14f5ada503a,
+        type: 2}
+    - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
+        type: 2}
+      propertyPath: waveObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1347419085115496, guid: 99383b9810a772945872aa4241399271,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c904e8d4c6b16604086efb3c10d38274, type: 2}
@@ -10631,7 +10646,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Castle Health = 10
+  m_Text: 'Castle Health = 15
+
+'
 --- !u!222 &2030119810
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10861,7 +10878,7 @@ RectTransform:
   - {fileID: 2030119807}
   - {fileID: 186995358}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
