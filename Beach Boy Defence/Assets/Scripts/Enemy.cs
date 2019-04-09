@@ -15,6 +15,9 @@ public class Enemy : MonoBehaviour
     public float health = 3;
     [HideInInspector]
     public float maxhealth;
+
+    public bool IsBoss = false;
+    bool IsHalf = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Projectile projectile = collision.GetComponent<Projectile>();
@@ -25,6 +28,16 @@ public class Enemy : MonoBehaviour
             {
                 projectile.Used = true;
                 health -= projectile.Damage;
+
+
+                if(IsBoss == true && health < maxhealth/2 && IsHalf == false)
+                {
+                    GetComponent<SpriteRenderer>().color = Color.red;
+                    IsHalf = true;
+                    GetComponent<pathing>().speed *= 2;
+                    GetComponent<Animator>().speed *= 2;
+                }
+                
                 Destroy(collision.gameObject);
                 if (myhealthbar != null)
                     myhealthbar.sethealthbarscale(health,maxhealth);

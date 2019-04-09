@@ -114,7 +114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: 0}
   speed: 12
-  Damage: 8.5
+  Damage: 9.3
   Used: 0
   AreaDMG: 1
 --- !u!212 &212466387040078922

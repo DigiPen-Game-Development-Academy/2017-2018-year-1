@@ -2498,7 +2498,7 @@ Prefab:
     - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
         type: 2}
       propertyPath: waveObjects.Array.size
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4048437756625106, guid: c904e8d4c6b16604086efb3c10d38274, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2666,6 +2666,12 @@ Prefab:
       propertyPath: waveObjects.Array.data[19]
       value: 
       objectReference: {fileID: 1594452699128464, guid: 5cacc4267e5ec5e46852f14f5ada503a,
+        type: 2}
+    - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
+        type: 2}
+      propertyPath: waveObjects.Array.data[20]
+      value: 
+      objectReference: {fileID: 1273573294943520, guid: 003e33f28cb68484483a1f136a77ac57,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c904e8d4c6b16604086efb3c10d38274, type: 2}

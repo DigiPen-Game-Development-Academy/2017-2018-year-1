@@ -2497,7 +2497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b7111a37c0dc648b186c9e528eb252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coincounter: 27
+  coincounter: 57
 --- !u!1001 &1295830613
 Prefab:
   m_ObjectHideFlags: 0
@@ -2508,7 +2508,7 @@ Prefab:
     - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
         type: 2}
       propertyPath: waveObjects.Array.size
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4048437756625106, guid: c904e8d4c6b16604086efb3c10d38274, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2676,6 +2676,12 @@ Prefab:
       propertyPath: waveObjects.Array.data[0]
       value: 
       objectReference: {fileID: 1347419085115496, guid: 99383b9810a772945872aa4241399271,
+        type: 2}
+    - target: {fileID: 114446184481766734, guid: c904e8d4c6b16604086efb3c10d38274,
+        type: 2}
+      propertyPath: waveObjects.Array.data[20]
+      value: 
+      objectReference: {fileID: 1273573294943520, guid: 003e33f28cb68484483a1f136a77ac57,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c904e8d4c6b16604086efb3c10d38274, type: 2}
