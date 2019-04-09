@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 4732142582861070}
   - component: {fileID: 212125102882848466}
   - component: {fileID: 61170908013486004}
+  - component: {fileID: 114044541710982114}
   m_Layer: 0
   m_Name: TowerButton1
   m_TagString: Untagged
@@ -132,7 +133,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1835823707277650}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0, z: -8}
+  m_LocalPosition: {x: 0.8, y: 0, z: -9}
   m_LocalScale: {x: 0.3, y: 0.29999995, z: 1}
   m_Children:
   - {fileID: 4220538271634438}
@@ -172,7 +173,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1730683000831004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8, y: 0, z: -8}
+  m_LocalPosition: {x: -0.8, y: 0, z: -9}
   m_LocalScale: {x: 0.3, y: 0.29999998, z: 1}
   m_Children:
   - {fileID: 4309178512089620}
@@ -357,6 +358,17 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
+--- !u!114 &114044541710982114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1730683000831004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92d565fc4a058944a8d73bc133348255, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114185054406833810
 MonoBehaviour:
   m_ObjectHideFlags: 1
