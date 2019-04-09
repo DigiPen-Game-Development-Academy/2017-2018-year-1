@@ -9,6 +9,8 @@ public class playermovement : MonoBehaviour
     public Vector3 MinPosition;
     public Vector3 MaxPosition;
     Rigidbody2D rigid;
+    float timer = 0.3f;
+    public AudioClip audiotoplay;
    
    //int currentscore = 0;
    //private void OnCollision2DEnter(Collision2D collision)
@@ -26,12 +28,16 @@ public class playermovement : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody2D>();
         
+       
+
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
-		if(Input.GetKey(KeyCode.W))
+        Camera camera = FindObjectOfType<Camera>();
+        AudioSource cameraAudio = camera.GetComponent<AudioSource>();
+        if (Input.GetKey(KeyCode.W))
         {
             Vector3 velocity = rigid.velocity;
             velocity.y += 1;
@@ -40,6 +46,14 @@ public class playermovement : MonoBehaviour
                 velocity.y = 3;
             }
             rigid.velocity = velocity;
+            timer -= Time.deltaTime;
+            if(timer <= 0)
+            {
+                cameraAudio.PlayOneShot(audiotoplay);
+                timer = 0.3f;
+            }
+            
+
         }
         else if(Input.GetKeyUp(KeyCode.W))
         {
@@ -56,6 +70,12 @@ public class playermovement : MonoBehaviour
                 velocity.x = -3;
             }
             rigid.velocity = velocity;
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                cameraAudio.PlayOneShot(audiotoplay);
+                timer = 0.3f;
+            }
         }
         else if (Input.GetKeyUp(KeyCode.A))
         {
@@ -72,6 +92,12 @@ public class playermovement : MonoBehaviour
                 velocity.y = -3;
             }
             rigid.velocity = velocity;
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                cameraAudio.PlayOneShot(audiotoplay);
+                timer = 0.3f;
+            }
         }
         else if (Input.GetKeyUp(KeyCode.S))
         {
@@ -88,6 +114,12 @@ public class playermovement : MonoBehaviour
                 velocity.x = 3;
             }
             rigid.velocity = velocity;
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                cameraAudio.PlayOneShot(audiotoplay);
+                timer = 0.3f;
+            }
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
