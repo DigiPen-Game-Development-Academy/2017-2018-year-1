@@ -286,6 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinPosition: {x: 0, y: 0, z: 0}
   MaxPosition: {x: 0, y: 0, z: 0}
+  audiotoplay: {fileID: 8300000, guid: 6e5dd270402b9904685abbe1fe0d262c, type: 3}
 --- !u!212 &212503114228273150
 SpriteRenderer:
   m_ObjectHideFlags: 1
