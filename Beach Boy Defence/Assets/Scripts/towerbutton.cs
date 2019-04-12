@@ -5,8 +5,9 @@ using UnityEngine;
 public class towerbutton : MonoBehaviour
 {
     public GameObject towerToCreate;
-    
-    int limit = 0;
+    public GameObject towercreatepoint;
+
+    public int limit = 0;
 	public GameObject SoundEffect;
     
     private void OnMouseDown()
@@ -20,9 +21,10 @@ public class towerbutton : MonoBehaviour
             GameObject create = Instantiate(towerToCreate, transform.parent.position, transform.rotation);
 			Instantiate(SoundEffect, transform.parent.position, transform.rotation);
             towerid.nomore = true;
+            create.GetComponent<towerreplacer>().towercreatepoint = towercreatepoint;
             currentcount.coincounter -= 30;
             
-            limit += 2;
+            limit += 1;
             Destroy(transform.parent.gameObject);
         }
       

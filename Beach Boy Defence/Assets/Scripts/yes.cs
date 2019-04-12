@@ -5,17 +5,21 @@ using UnityEngine;
 public class yes : MonoBehaviour
 {
     public GameObject towertodestroy;
+    public GameObject towercreatepoint;
     void OnMouseDown()
     {
+        var towermans = FindObjectOfType<towerplacer>().nomore = false;
         
         var tower = FindObjectOfType<towerplacer>();
         var coins = FindObjectOfType<CoinCounter>();
         coins.coincounter += 15;
-        tower.nomore = false;
+        towercreatepoint.GetComponent<towerplacer>().nomore = false;
         Destroy(transform.parent.gameObject);
         Destroy(towertodestroy);
-        Debug.Log("Stuffffff");
         
+       
+       
+
     }
     // Use this for initialization
     void Start ()

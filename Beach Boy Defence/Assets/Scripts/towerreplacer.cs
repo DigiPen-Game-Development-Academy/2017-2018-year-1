@@ -7,14 +7,17 @@ using UnityEngine.Events;
 public class towerreplacer : MonoBehaviour
 {
     public GameObject uiboi;
+    public GameObject towercreatepoint;
     int limit = 0;
     private void OnMouseOver()
     {
-        if(Input.GetMouseButtonDown(1) && limit == 0)
+        if(Input.GetMouseButtonDown(1))
         {
             GameObject create = Instantiate(uiboi, transform.position, transform.rotation);
             create.transform.Find("TowerButton3").GetComponent<yes>().towertodestroy = gameObject;
-            limit++;
+            create.transform.Find("TowerButton3").GetComponent<yes>().towercreatepoint = towercreatepoint;
+            var towermans = GetComponent<towerplacer>();
+            
         }
        
     }

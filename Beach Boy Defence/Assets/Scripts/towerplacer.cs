@@ -23,6 +23,11 @@ public class towerplacer : MonoBehaviour
             
             createdInterface = Instantiate(creationInterface, transform.position, Quaternion.identity);
             var Created = createdInterface.GetComponent<creator>();
+            createdInterface.transform.Find("TowerButton3").GetComponent<towerbutton>().towercreatepoint = gameObject;
+            createdInterface.transform.Find("TowerButton2").GetComponent<towerbutton>().towercreatepoint = gameObject;
+            createdInterface.transform.Find("TowerButton1").GetComponent<towerbutton>().towercreatepoint = gameObject;
+
+
             Created.towerrid = this;
         }
     }
