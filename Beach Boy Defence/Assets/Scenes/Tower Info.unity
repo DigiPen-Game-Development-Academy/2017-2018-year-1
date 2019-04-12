@@ -1486,23 +1486,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1725806048}
   m_CullTransparentMesh: 0
---- !u!1 &1873702977 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1909319336509804, guid: e45950c18630c1944aa006d888c9d982,
-    type: 2}
-  m_PrefabInternal: {fileID: 2025213729}
---- !u!114 &1873702978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1873702977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fb054e95c49e0d40a5e9c09fd995879, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scenesenderlocation: Title Screen Maybe
 --- !u!1 &1879286863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,63 +1716,42 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
       propertyPath: m_LocalPosition.y
       value: -0.19
       objectReference: {fileID: 0}
-    - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
       propertyPath: m_LocalPosition.z
       value: -11
       objectReference: {fileID: 0}
-    - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 102577026015984418, guid: e45950c18630c1944aa006d888c9d982,
-        type: 2}
-      propertyPath: m_Text
-      value: Back To Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 212295156100521642, guid: e45950c18630c1944aa006d888c9d982,
-        type: 2}
-      propertyPath: m_Color.a
-      value: 0.8117647
-      objectReference: {fileID: 0}
-    - target: {fileID: 212295156100521642, guid: e45950c18630c1944aa006d888c9d982,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212295156100521642, guid: e45950c18630c1944aa006d888c9d982,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 0.9606918
-      objectReference: {fileID: 0}
-    - target: {fileID: 212295156100521642, guid: e45950c18630c1944aa006d888c9d982,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0.7877358
+    - target: {fileID: 1332057652080660, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+      propertyPath: m_Name
+      value: startbutton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e45950c18630c1944aa006d888c9d982, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
   m_IsPrefabAsset: 0

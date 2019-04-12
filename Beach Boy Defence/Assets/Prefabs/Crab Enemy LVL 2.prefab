@@ -190,6 +190,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 80
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114961247643132104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -235,7 +236,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f37a4d734d0958046b490ac6f45a0c31, type: 3}
   m_Color: {r: 0.2028302, g: 0.8717843, b: 1, a: 1}
   m_FlipX: 0

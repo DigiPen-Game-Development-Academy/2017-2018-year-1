@@ -88,6 +88,9 @@ public class TowerShoot : MonoBehaviour
     void Shoot()
     {
         GameObject target = FindBestTarget();
+
+        
+
         if (target == null) return;
 
         animator.SetBool("SHOOTING", true);
@@ -119,18 +122,20 @@ public class TowerShoot : MonoBehaviour
     {
 
 
-        List<Enemy> enemies = new List<Enemy>(FindObjectsOfType<Enemy>());
-        if (enemies.Count < 1) return null;
+        var enemies = FindObjectsOfType<Enemy>();
+        if (enemies.Length < 1) return null;
 
 
         Enemy closestSoFar = null;
         float closestSquareDistance = maxDistance * maxDistance;
 
-        for (int i = 0; i < enemies.Count; ++i)
+        for (int i = 0; i < enemies.Length; ++i)
         {
             Enemy current = enemies[i];
+            var currentPosition = current.transform.position;
+            currentPosition.z = transform.position.z;
             float currentSquareDistance =
-                Vector3.SqrMagnitude(transform.position - current.transform.position);
+                Vector3.SqrMagnitude(transform.position - currentPosition);
 
             if (currentSquareDistance < closestSquareDistance)
             {

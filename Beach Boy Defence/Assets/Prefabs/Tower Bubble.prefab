@@ -113,7 +113,7 @@ BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1711176828937852}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -282,6 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiboi: {fileID: 1553557378586142, guid: 688e3b4c6c36d5b4490bcb6a74861735, type: 2}
+  towercreatepoint: {fileID: 0}
 --- !u!114 &114258093637776484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -294,6 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiboi: {fileID: 1553557378586142, guid: 688e3b4c6c36d5b4490bcb6a74861735, type: 2}
+  towercreatepoint: {fileID: 0}
 --- !u!114 &114923100539620874
 MonoBehaviour:
   m_ObjectHideFlags: 1
