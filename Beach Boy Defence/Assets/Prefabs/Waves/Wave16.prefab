@@ -497,7 +497,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4959309094304668}
-  - component: {fileID: 114114811558186192}
   m_Layer: 0
   m_Name: Wave16
   m_TagString: Untagged
@@ -2759,6 +2758,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 25
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114113573709545716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2777,6 +2777,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114114288130952446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2795,18 +2796,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
   maxhealth: 0
---- !u!114 &114114811558186192
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1594452699128464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 136f507281aad704b91c38e55f74cbb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scenelevelsender: winlevel
+  IsBoss: 0
 --- !u!114 &114131136256398316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2921,6 +2911,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114240207336455288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2987,6 +2978,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114321763459035928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3016,6 +3008,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 20
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114334651787885166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3177,6 +3170,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114443420927997902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3195,6 +3189,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114443818139308516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3237,6 +3232,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114455491119946428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3255,6 +3251,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 25
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114457900688924588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3286,6 +3283,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114463030845500370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3304,6 +3302,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114472834980540656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3347,6 +3346,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114489596079500312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3402,6 +3402,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 60
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114575932690306890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3494,6 +3495,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114672236565199828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3512,6 +3514,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114687115358529728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3601,6 +3604,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 60
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114714879670716758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3619,6 +3623,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114718981389077506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3745,6 +3750,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 8f25b415f2db29647b2014f0be3f7a62, type: 3}
   health: 60
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114786860714151496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3763,6 +3769,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 25
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114797449861884696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3841,6 +3848,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: a5b7f33555ba00043a701d10508f7b1f, type: 3}
   health: 40
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114886896893808414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3894,6 +3902,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 20
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114908709647721920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3935,6 +3944,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 20
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114993539828123702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3953,6 +3963,7 @@ MonoBehaviour:
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
   health: 20
   maxhealth: 0
+  IsBoss: 0
 --- !u!114 &114995420497266216
 MonoBehaviour:
   m_ObjectHideFlags: 1
