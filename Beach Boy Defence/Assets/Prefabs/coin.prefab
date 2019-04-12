@@ -69,6 +69,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 1
+  movementDelay: 0.24
+  destination: {x: -13, y: 9, z: 0}
+  snap: 0.05
 --- !u!212 &212976419088794208
 SpriteRenderer:
   m_ObjectHideFlags: 1
