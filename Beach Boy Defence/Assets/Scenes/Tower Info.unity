@@ -300,8 +300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 426, y: 132.5}
-  m_SizeDelta: {x: 296.4, y: 218.2}
+  m_AnchoredPosition: {x: 426, y: 136.2}
+  m_SizeDelta: {x: 296.4, y: 225.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &447706659
 MonoBehaviour:
@@ -977,7 +977,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 427, y: 78}
+  m_AnchoredPosition: {x: 425.99994, y: 93.9}
   m_SizeDelta: {x: 296.4, y: 218.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940526424
@@ -1019,6 +1019,9 @@ MonoBehaviour:
 
 
     -Build towers by approaching wet sand areas.
+
+
+    -Sell towers by right clicking on the tower you want to sell
 
 
     -Towers cost 30 coins each.
@@ -1532,8 +1535,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -287, y: 76}
-  m_SizeDelta: {x: 313.1, y: 238.3}
+  m_AnchoredPosition: {x: -287, y: 65.1}
+  m_SizeDelta: {x: 313.1, y: 260.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879286865
 MonoBehaviour:
