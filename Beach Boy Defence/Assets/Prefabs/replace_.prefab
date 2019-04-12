@@ -381,6 +381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towertodestroy: {fileID: 0}
+  towercreatepoint: {fileID: 0}
+  CoinRefund: 25
 --- !u!114 &114591843262876042
 MonoBehaviour:
   m_ObjectHideFlags: 1

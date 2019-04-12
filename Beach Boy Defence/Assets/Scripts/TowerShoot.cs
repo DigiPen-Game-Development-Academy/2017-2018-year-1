@@ -29,10 +29,10 @@ public class TowerShoot : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         
-        timeTillNextShot = timeBetweenShots;
+        timeTillNextShot = 0;
         if(RangeCircle != null)
         {
-            Debug.Log("Stuffffff");
+            
             RangeCircle.transform.localScale = new Vector3(maxDistance, maxDistance, maxDistance);
         }
 
@@ -137,6 +137,10 @@ public class TowerShoot : MonoBehaviour
                 closestSoFar = current;
                 closestSquareDistance = currentSquareDistance;
             }
+        }
+        if(closestSoFar == null)
+        {
+            return null;
         }
 
         return closestSoFar.gameObject;

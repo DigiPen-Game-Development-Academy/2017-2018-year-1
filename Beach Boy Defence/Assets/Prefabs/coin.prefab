@@ -68,7 +68,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e70f3afefc44754aa8b7aac0f2ba676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 1
+  timer: 1.2
+  movementDelay: 0.28
+  destination: {x: -15, y: 9, z: -2}
+  snap: 0.05
   movementDelay: 0.24
   destination: {x: -13, y: 9, z: 0}
   snap: 0.05
