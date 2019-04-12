@@ -6,6 +6,9 @@ public class Coin : MonoBehaviour {
 
     // time till destroy
     public float timer = 3;
+    public float movementDelay = 1;
+    public Vector3 destination;
+    public float snap;
     // Use this for initialization
     void Start ()
     {	
@@ -16,9 +19,15 @@ public class Coin : MonoBehaviour {
         // count down timer till destroy
         // destroy coin object
         timer -= Time.deltaTime;
-        if(timer <= 0)
+        movementDelay -= Time.deltaTime;
+        if (timer <= 0)
         {
             Destroy(gameObject);
+        }
+        if (movementDelay <= 0)
+        {
+            var newPos = Vector3.Lerp(transform.position, destination, snap);
+            transform.position = newPos;
         }
 	}
 }
