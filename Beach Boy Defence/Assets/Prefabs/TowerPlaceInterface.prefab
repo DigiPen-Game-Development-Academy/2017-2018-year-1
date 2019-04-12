@@ -623,6 +623,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerToCreate: {fileID: 1232523896500500, guid: e09a035e0678f7b4abb3da046eb708e6,
     type: 2}
+  TowerRange: 20
+  Offset: {x: 0, y: 0, z: 0}
+  RangeCircle: {fileID: 1388034158289948, guid: 5231579ecb11c8b4093830aa5a2dfbf5,
+    type: 2}
   SoundEffect: {fileID: 1192017873604178, guid: cd18ed629aaa05a41b7ba45a1f5e58fb,
     type: 2}
 --- !u!114 &114227980188832724
@@ -638,6 +642,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerToCreate: {fileID: 1956428181568460, guid: aef98e6a3601fb3429e962a3634f3b02,
     type: 2}
+  TowerRange: 20
+  Offset: {x: 0, y: 0, z: 0}
+  RangeCircle: {fileID: 1388034158289948, guid: 5231579ecb11c8b4093830aa5a2dfbf5,
+    type: 2}
   SoundEffect: {fileID: 1192017873604178, guid: cd18ed629aaa05a41b7ba45a1f5e58fb,
     type: 2}
 --- !u!114 &114858046221329908
@@ -652,6 +660,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerToCreate: {fileID: 1588751758188486, guid: 953f1efadd4618b4eba473923de8adc9,
+    type: 2}
+  TowerRange: 20
+  Offset: {x: 0, y: 0, z: 0}
+  RangeCircle: {fileID: 1388034158289948, guid: 5231579ecb11c8b4093830aa5a2dfbf5,
     type: 2}
   SoundEffect: {fileID: 1192017873604178, guid: cd18ed629aaa05a41b7ba45a1f5e58fb,
     type: 2}
