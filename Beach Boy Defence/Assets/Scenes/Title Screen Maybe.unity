@@ -740,7 +740,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1909319336509804, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_Name
-      value: EndlessModestartbutton (3)
+      value: EndlessModestartbutton
       objectReference: {fileID: 0}
     - target: {fileID: 102577026015984418, guid: e45950c18630c1944aa006d888c9d982,
         type: 2}
@@ -911,7 +911,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1909319336509804, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_Name
-      value: Infobutton (1)
+      value: Infobutton
       objectReference: {fileID: 0}
     - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_LocalScale.x
