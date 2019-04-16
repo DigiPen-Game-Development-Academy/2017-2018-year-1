@@ -6,7 +6,14 @@ public class TowerShoot : MonoBehaviour
 {
 
     Animator animator;
+
+    
+
     public string ShootAnimationName;
+
+    
+
+    SpriteRenderer WeaponSpriteRenderer;
 
     public GameObject projectile;
     public float maxDistance;
@@ -27,6 +34,10 @@ public class TowerShoot : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
+        //BodyAnimator.Play("TowerBuildAnimation");
+
+        WeaponSpriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         
         timeTillNextShot = 0;
@@ -41,33 +52,36 @@ public class TowerShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       /* var AllEnemies = FindObjectsOfType<Enemy>();
+        /* var AllEnemies = FindObjectsOfType<Enemy>();
 
-        bool FoundSomeone = false;
+         bool FoundSomeone = false;
 
-        foreach(var enemy in AllEnemies)
-        {
-            Vector3 MyPosition = transform.position;
-            Vector3 EnemyPosition = enemy.transform.position;
+         foreach(var enemy in AllEnemies)
+         {
+             Vector3 MyPosition = transform.position;
+             Vector3 EnemyPosition = enemy.transform.position;
 
-            Vector3 Difference = MyPosition - EnemyPosition;
+             Vector3 Difference = MyPosition - EnemyPosition;
 
-            float Distance = Difference.magnitude;
+             float Distance = Difference.magnitude;
 
-            if (Distance > maxDistance)
-            {
-                continue;
-            }
+             if (Distance > maxDistance)
+             {
+                 continue;
+             }
 
-            FoundSomeone = true;
-            break;
-        }
+             FoundSomeone = true;
+             break;
+         }
 
-        if (FoundSomeone == false)
-        {
-            animator.SetBool("SHOOTING", false);
-        }
-        */
+         if (FoundSomeone == false)
+         {
+             animator.SetBool("SHOOTING", false);
+         }
+         */
+
+
+        
 
         timeTillNextShot -= Time.deltaTime;
         if (timeTillNextShot <= 0)
@@ -75,8 +89,10 @@ public class TowerShoot : MonoBehaviour
             Shoot();
         }
 
+        
         bool Animationiscomplete = animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1;
         bool Correctname = animator.GetCurrentAnimatorStateInfo(0).IsName(ShootAnimationName);
+
 
         if (Animationiscomplete && Correctname)
         {
