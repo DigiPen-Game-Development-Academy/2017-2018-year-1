@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/KalebPoquetteTestWorld.unity
+    path: Assets/Scenes/NormalMode.unity
     guid: 15b445e66f0321f45bf3503eb2332e33
   - enabled: 1
     path: Assets/Scenes/LoseLevel.unity
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EasyMode.unity
     guid: 2946abec5fd01714b90990d17434ce0b
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 6ad15479e850e454eac6f4d4e68285cc
   m_configObjects: {}
