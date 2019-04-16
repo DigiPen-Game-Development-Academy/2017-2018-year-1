@@ -598,7 +598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb054e95c49e0d40a5e9c09fd995879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenesenderlocation: KalebPoquetteTestWorld
+  scenesenderlocation: NormalMode
 --- !u!1 &522976210
 GameObject:
   m_ObjectHideFlags: 0
