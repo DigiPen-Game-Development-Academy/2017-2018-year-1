@@ -45,11 +45,11 @@ public class sandcastlehealth : MonoBehaviour
                     if (Health <= 0 && AreWeDeadAlready == false)
                     {
                         AreWeDeadAlready = true;
-                        cameraAudio.PlayOneShot(CastleDestroyed);
+                        cameraAudio.PlayOneShot(CastleDestroyed, 3);
                     }
                     else
                     {
-                        cameraAudio.PlayOneShot(CastleDamaged);
+                        cameraAudio.PlayOneShot(CastleDamaged, 3);
                     }
                 }
             }

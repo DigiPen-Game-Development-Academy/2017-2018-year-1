@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class Playershoot : MonoBehaviour
 {
+    public AudioClip ShootSound;
     public GameObject projectile;
+
+    AudioSource SFXSource;
 
     public float firerate = 0.05f;
     float timeTillFire = 0;
@@ -16,8 +19,13 @@ public class Playershoot : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-		
-	}
+        Camera camera = FindObjectOfType<Camera>();
+        if (camera)
+        {
+            SFXSource = camera.GetComponent<AudioSource>();
+            
+        }
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -48,7 +56,7 @@ public class Playershoot : MonoBehaviour
         create.GetComponent<Projectile>().direction = direction;
         create.GetComponent<Projectile>().speed = speed;
 
-
+        SFXSource.PlayOneShot(ShootSound, 0.09f);
         return gameObject;
     }
 }
