@@ -76,7 +76,7 @@ public class Enemy : MonoBehaviour
                 AudioSource cameraAudio = camera.GetComponent<AudioSource>();
                 if (cameraAudio)
                 {
-                    cameraAudio.PlayOneShot(deathSound, 2);
+                    cameraAudio.PlayOneShot(deathSound, 1.6f);
                 }
             }
 

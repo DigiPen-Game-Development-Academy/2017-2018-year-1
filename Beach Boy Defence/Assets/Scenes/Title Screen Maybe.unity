@@ -818,9 +818,7 @@ Prefab:
     - target: {fileID: 102577026015984418, guid: e45950c18630c1944aa006d888c9d982,
         type: 2}
       propertyPath: m_Text
-      value: 'SandBox Mode (WIP)
-
-'
+      value: "SandBox Mode \n"
       objectReference: {fileID: 0}
     - target: {fileID: 212295156100521642, guid: e45950c18630c1944aa006d888c9d982,
         type: 2}
@@ -865,22 +863,22 @@ Prefab:
     - target: {fileID: 212295156100521642, guid: e45950c18630c1944aa006d888c9d982,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.46226418
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212295156100521642, guid: e45950c18630c1944aa006d888c9d982,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.46226418
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212295156100521642, guid: e45950c18630c1944aa006d888c9d982,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.46226418
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
         type: 2}

@@ -117,7 +117,7 @@ public class TowerShoot : MonoBehaviour
             AudioSource cameraAudio = camera.GetComponent<AudioSource>();
             if (cameraAudio)
             {
-                cameraAudio.PlayOneShot(shootSound, 1.3f);
+                cameraAudio.PlayOneShot(shootSound, 1);
             }
         }
 
