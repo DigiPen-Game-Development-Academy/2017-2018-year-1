@@ -198,7 +198,7 @@ MonoBehaviour:
   damageToCastle: 1
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
   myhealthbar: {fileID: 114975649749783222}
-  deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
+  deathSound: {fileID: 8300000, guid: 71b5449b8c75a0a4a913326191f16230, type: 3}
   health: 19
   maxhealth: 0
   IsBoss: 0
