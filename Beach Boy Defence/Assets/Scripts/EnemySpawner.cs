@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public wavecount wavecount;
+    public wavecount Wavecount;
     public Animator WaveTimerAnimator;
     public string StateName;
     public List<GameObject> waveObjects;
@@ -27,10 +27,10 @@ public class EnemySpawner : MonoBehaviour
             Timer -= Time.deltaTime;
             if (Timer <= 0)
             {
-                wavecount.wavecounting += 1;
-                if(wavecount.wavecounting >= 21)
+                Wavecount.wavecounting += 1;
+                if(Wavecount.wavecounting >= 21)
                 {
-                    wavecount.wavecounting = 21;
+                    Wavecount.wavecounting = 21;
                 }
                 CreateWave();
                 Timer = timebetweenwaves;
@@ -38,10 +38,10 @@ public class EnemySpawner : MonoBehaviour
         }
         if (Input.GetKeyDown(startWaveKey))
         {
-            wavecount.wavecounting += 1;
-            if (wavecount.wavecounting >= 21)
+            Wavecount.wavecounting += 1;
+            if (Wavecount.wavecounting >= 21)
             {
-                wavecount.wavecounting = 21;
+                Wavecount.wavecounting = 21;
             }
             CreateWave();
             Timer = timebetweenwaves;
