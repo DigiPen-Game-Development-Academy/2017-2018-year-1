@@ -49,7 +49,7 @@ public class playermovement : MonoBehaviour
             timer -= Time.deltaTime;
             if(timer <= 0)
             {
-                cameraAudio.PlayOneShot(audiotoplay, 0.5f);
+                cameraAudio.PlayOneShot(audiotoplay, 0.4f);
                 timer = 0.3f;
             }
             
@@ -73,7 +73,7 @@ public class playermovement : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer <= 0)
             {
-                cameraAudio.PlayOneShot(audiotoplay, 0.5f);
+                cameraAudio.PlayOneShot(audiotoplay, 0.4f);
                 timer = 0.3f;
             }
         }
@@ -95,7 +95,7 @@ public class playermovement : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer <= 0)
             {
-                cameraAudio.PlayOneShot(audiotoplay, 0.5f);
+                cameraAudio.PlayOneShot(audiotoplay, 0.4f);
                 timer = 0.3f;
             }
         }
@@ -117,7 +117,7 @@ public class playermovement : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer <= 0)
             {
-                cameraAudio.PlayOneShot(audiotoplay, 0.5f);
+                cameraAudio.PlayOneShot(audiotoplay, 0.4f);
                 timer = 0.3f;
             }
         }
