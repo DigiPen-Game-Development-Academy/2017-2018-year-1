@@ -54,6 +54,15 @@ public class Enemy : MonoBehaviour
     {
         maxhealth = health;
        
+        if (IsBoss)
+        {
+            var musicChange = GetComponent<MusicChange>();
+
+            if (musicChange != null)
+            {
+                musicChange.Change();
+            }
+        }
 	}
 	
 	// Update is called once per frame
