@@ -508,7 +508,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.01900015
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_LocalPosition.z
@@ -578,6 +578,21 @@ Prefab:
     - target: {fileID: 1909319336509804, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_Name
       value: Normalmodestartbutton
+      objectReference: {fileID: 0}
+    - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 14.639937
+      objectReference: {fileID: 0}
+    - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.5266511
+      objectReference: {fileID: 0}
+    - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e45950c18630c1944aa006d888c9d982, type: 2}
@@ -803,7 +818,7 @@ Prefab:
     - target: {fileID: 102577026015984418, guid: e45950c18630c1944aa006d888c9d982,
         type: 2}
       propertyPath: m_Text
-      value: 'Campaign Mode (WIP)
+      value: 'SandBox Mode (WIP)
 
 '
       objectReference: {fileID: 0}
@@ -835,7 +850,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1909319336509804, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_Name
-      value: Campaignmodestartbutton (1)
+      value: Sandboxmodestartbutton (1)
       objectReference: {fileID: 0}
     - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
         type: 2}
@@ -867,6 +882,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e45950c18630c1944aa006d888c9d982, type: 2}
   m_IsPrefabAsset: 0
@@ -886,7 +906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb054e95c49e0d40a5e9c09fd995879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenesenderlocation: LevelSelect
+  scenesenderlocation: SandboxMode
 --- !u!1001 &1316023085
 Prefab:
   m_ObjectHideFlags: 0
@@ -960,6 +980,11 @@ Prefab:
     - target: {fileID: 4677141603513170, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_LocalPosition.y
       value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e45950c18630c1944aa006d888c9d982, type: 2}
@@ -1588,7 +1613,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.2600001
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 4400140281713502, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1658,6 +1683,21 @@ Prefab:
     - target: {fileID: 4677141603513170, guid: e45950c18630c1944aa006d888c9d982, type: 2}
       propertyPath: m_LocalScale.y
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 14.639938
+      objectReference: {fileID: 0}
+    - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 2.612715
+      objectReference: {fileID: 0}
+    - target: {fileID: 61837721864592556, guid: e45950c18630c1944aa006d888c9d982,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e45950c18630c1944aa006d888c9d982, type: 2}

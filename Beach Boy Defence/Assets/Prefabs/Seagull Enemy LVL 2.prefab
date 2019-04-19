@@ -199,7 +199,7 @@ MonoBehaviour:
   coinPrefab: {fileID: 1584063319099294, guid: 6b934e5c07a90744da06a5a14068272e, type: 2}
   myhealthbar: {fileID: 114269443006562710}
   deathSound: {fileID: 8300000, guid: 3186921e043d5084385f84b209446f2d, type: 3}
-  health: 50
+  health: 52
   maxhealth: 0
   IsBoss: 0
 --- !u!212 &212748600635919704
