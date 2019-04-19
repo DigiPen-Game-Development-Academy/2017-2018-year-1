@@ -2081,12 +2081,12 @@ Prefab:
     - target: {fileID: 224661971304234440, guid: f415055064ba83245ac91762501f7c6e,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -73
+      value: -109.4
       objectReference: {fileID: 0}
     - target: {fileID: 224661971304234440, guid: f415055064ba83245ac91762501f7c6e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: -24.8
       objectReference: {fileID: 0}
     - target: {fileID: 224661971304234440, guid: f415055064ba83245ac91762501f7c6e,
         type: 2}

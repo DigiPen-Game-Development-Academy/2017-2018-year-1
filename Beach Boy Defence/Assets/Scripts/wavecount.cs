@@ -17,6 +17,6 @@ public class wavecount : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        wavecounter.text = "Wave" + wavecounting.ToString();
+        wavecounter.text = "Wave " + wavecounting.ToString() + "/21";
 	}
 }
