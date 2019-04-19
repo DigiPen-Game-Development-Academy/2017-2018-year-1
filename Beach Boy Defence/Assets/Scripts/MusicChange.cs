@@ -20,6 +20,6 @@ public class MusicChange : MonoBehaviour
             return;
 
         audioSource.Stop();
-        audioSource.PlayOneShot(Music);
+        audioSource.PlayOneShot(Music, 1.5f);
     }
 }
