@@ -52,10 +52,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82fd40f5f082d8e4f99b1cb25ab1e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< .mine
+  Wavecount: {fileID: 114948970398225196, guid: ef6ba1f826f7ce545a640ac86e52bf7b,
+    type: 2}
+  WaveTimerAnimator: {fileID: 95263222201352414, guid: 85462a86acb8ba649a8e3dd868565264,
+    type: 2}
+  StateName: 
+||||||| .r330
+=======
   Wavecount: {fileID: 114948970398225196, guid: ef6ba1f826f7ce545a640ac86e52bf7b,
     type: 2}
   WaveTimerAnimator: {fileID: 0}
   StateName: 
+>>>>>>> .r332
   waveObjects:
   - {fileID: 1034781820988004, guid: ab34ea604827eea46b51110b0bce08e4, type: 2}
   - {fileID: 1691501832976460, guid: 9ff5361c2a4d62a45960f3fb549fdadd, type: 2}
