@@ -52,13 +52,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82fd40f5f082d8e4f99b1cb25ab1e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wavecount: {fileID: 114948970398225196, guid: ef6ba1f826f7ce545a640ac86e52bf7b,
-    type: 2}
-  WaveTimerAnimator: {fileID: 95263222201352414, guid: 85462a86acb8ba649a8e3dd868565264,
-    type: 2}
+  Wavecount: {fileID: 0}
+  WaveTimerAnimator: {fileID: 0}
   StateName: WaveTimer
   waveObjects:
-  - {fileID: 1636769584834912, guid: 4f4306be4d3932d47a3d89e0aced9895, type: 2}
+  - {fileID: 1347419085115496, guid: 99383b9810a772945872aa4241399271, type: 2}
   - {fileID: 1034781820988004, guid: ab34ea604827eea46b51110b0bce08e4, type: 2}
   - {fileID: 1918564843926724, guid: 9d9d023bb4c74ef4eabc2008a081bb5e, type: 2}
   - {fileID: 1827104824380572, guid: cac28e748f5710845912e2687d5298e1, type: 2}
@@ -80,7 +78,7 @@ MonoBehaviour:
   - {fileID: 1594452699128464, guid: 5cacc4267e5ec5e46852f14f5ada503a, type: 2}
   - {fileID: 1273573294943520, guid: 003e33f28cb68484483a1f136a77ac57, type: 2}
   startWaveKey: 9
-  timebetweenwaves: 15
+  timebetweenwaves: 25
 --- !u!212 &212432837887356480
 SpriteRenderer:
   m_ObjectHideFlags: 1
