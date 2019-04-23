@@ -24,7 +24,7 @@ GameObject:
   m_Layer: 0
   m_Name: TowerPlaceTrigger
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -35,8 +35,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1797780542408092}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.39, y: 0.49, z: -0.25}
-  m_LocalScale: {x: 0.8506529, y: 0.8724645, z: 0.8724645}
+  m_LocalPosition: {x: -3.5, y: 2.53, z: -0.25}
+  m_LocalScale: {x: 0.85064995, y: 0.87246, z: 0.87246}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -79,3 +79,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creationInterface: {fileID: 1122238225319264, guid: 1744e64bd5b86ed44be1681d93af3278,
     type: 2}
+  nomore: 0
+  createdInterface: {fileID: 0}
+  coins: 999999

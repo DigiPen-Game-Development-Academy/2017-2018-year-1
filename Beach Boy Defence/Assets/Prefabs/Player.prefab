@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233776637914318}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.66, y: 4.1, z: -6}
+  m_LocalPosition: {x: 1.39, y: -9.74, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 4119516489101488}
@@ -269,6 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f53d56b6b6874524eb6067220860f856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShootSound: {fileID: 0}
   projectile: {fileID: 1888784769868488, guid: fc784d8eab31d6044b3eedc1bf5e8dec, type: 2}
   firerate: 0.35
   speed: 7

@@ -72,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1232523896500500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.456982, y: -0.63097376, z: -0.0110678235}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4928937158889028}
@@ -281,7 +281,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiboi: {fileID: 1553557378586142, guid: 688e3b4c6c36d5b4490bcb6a74861735, type: 2}
-  towercreatepoint: {fileID: 0}
+  towercreatepoint: {fileID: 1288406575030770, guid: abc1cd08d901cc6418ce756f4977ad03,
+    type: 2}
 --- !u!114 &114963405900404982
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -27,7 +27,7 @@ public class playermovement : MonoBehaviour
     void Start ()
     {
         rigid = GetComponent<Rigidbody2D>();
-        
+        var mypos = transform.position;
        
 
     }

@@ -19,7 +19,7 @@ public class towerbutton : MonoBehaviour
     
     private void OnMouseDown()
     {
-       
+        Debug.Log("itsdoing");
         if (limit <= 0)
         {
             var currentcount = FindObjectOfType<CoinCounter>();
