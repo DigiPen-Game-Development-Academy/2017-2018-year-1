@@ -9,12 +9,12 @@ public class enemybuttoncreater : MonoBehaviour {
     {
         GameObject creation = Instantiate(enemytocreate);
 
-        enemytocreate.transform.position = positontogoto;
+        
     }
     // Use this for initialization
     void Start () {
-		
-	}
+        enemytocreate.transform.position = positontogoto;
+    }
 	
 	// Update is called once per frame
 	void Update () {
