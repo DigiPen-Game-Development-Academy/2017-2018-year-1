@@ -1583,6 +1583,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 61191332526597966, guid: d167c00fc8c6efe459fcdcde7771805d,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
   m_IsPrefabAsset: 0
@@ -11508,6 +11513,11 @@ Prefab:
         type: 2}
       propertyPath: scenesenderlocation
       value: Tower Info
+      objectReference: {fileID: 0}
+    - target: {fileID: 61191332526597966, guid: d167c00fc8c6efe459fcdcde7771805d,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
