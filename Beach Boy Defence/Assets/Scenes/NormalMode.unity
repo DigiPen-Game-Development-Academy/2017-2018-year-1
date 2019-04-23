@@ -2237,6 +2237,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1089708018
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -14.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4903459126909292, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332057652080660, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+      propertyPath: m_Name
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 102017335444062926, guid: d167c00fc8c6efe459fcdcde7771805d,
+        type: 2}
+      propertyPath: m_Text
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 61191332526597966, guid: d167c00fc8c6efe459fcdcde7771805d,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114209116084083122, guid: d167c00fc8c6efe459fcdcde7771805d,
+        type: 2}
+      propertyPath: scenesenderlocation
+      value: NormalMode
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d167c00fc8c6efe459fcdcde7771805d, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1178987709
 GameObject:
   m_ObjectHideFlags: 0
