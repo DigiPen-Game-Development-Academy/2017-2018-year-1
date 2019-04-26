@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212333066415522092}
   - component: {fileID: 95989741112515856}
   - component: {fileID: 114923100539620874}
-  - component: {fileID: 114258093637776484}
   - component: {fileID: 61333740051230780}
   m_Layer: 0
   m_Name: New Sprite
@@ -57,8 +56,8 @@ GameObject:
   - component: {fileID: 4916245478988962}
   - component: {fileID: 212681285184371146}
   - component: {fileID: 82628399987508296}
-  - component: {fileID: 114129942017623108}
   - component: {fileID: 61398425037953222}
+  - component: {fileID: 114986313230851200}
   m_Layer: 0
   m_Name: Tower Bubble
   m_TagString: Untagged
@@ -270,32 +269,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114129942017623108
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1956428181568460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbb99cadab19060449518e77c24e3c55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiboi: {fileID: 1553557378586142, guid: 688e3b4c6c36d5b4490bcb6a74861735, type: 2}
-  towercreatepoint: {fileID: 0}
---- !u!114 &114258093637776484
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1711176828937852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbb99cadab19060449518e77c24e3c55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiboi: {fileID: 1553557378586142, guid: 688e3b4c6c36d5b4490bcb6a74861735, type: 2}
-  towercreatepoint: {fileID: 0}
 --- !u!114 &114923100539620874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -314,6 +287,20 @@ MonoBehaviour:
   projectileSpeed: 14
   shootSound: {fileID: 8300000, guid: 3246ba50a175b5e428e454df7d6a48f4, type: 3}
   RangeCircle: {fileID: 1783132065640954}
+--- !u!114 &114986313230851200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956428181568460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb99cadab19060449518e77c24e3c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiboi: {fileID: 1553557378586142, guid: 688e3b4c6c36d5b4490bcb6a74861735, type: 2}
+  towercreatepoint: {fileID: 0}
+  limitlimmit: 0
 --- !u!212 &212333066415522092
 SpriteRenderer:
   m_ObjectHideFlags: 1
