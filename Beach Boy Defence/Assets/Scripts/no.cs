@@ -7,8 +7,9 @@ public class no : MonoBehaviour
     void OnMouseDown()
     {
 
-        
+        var limitcheck = FindObjectOfType<towerreplacer>();
         Destroy(transform.parent.gameObject);
+        limitcheck.limit -= 1;
         
 
     }

@@ -8,7 +8,7 @@ public class towerreplacer : MonoBehaviour
 {
     public GameObject uiboi;
     public GameObject towercreatepoint;
-    int limit = 0;
+    public int limit = 0;
     private void OnMouseOver()
     {
         if(Input.GetMouseButtonDown(1) && limit <= 0)
