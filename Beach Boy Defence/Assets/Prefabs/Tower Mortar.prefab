@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.6}
+  m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
 --- !u!61 &61797345700036012
 BoxCollider2D:
@@ -283,6 +283,7 @@ MonoBehaviour:
   uiboi: {fileID: 1553557378586142, guid: 688e3b4c6c36d5b4490bcb6a74861735, type: 2}
   towercreatepoint: {fileID: 1288406575030770, guid: abc1cd08d901cc6418ce756f4977ad03,
     type: 2}
+  limit: 0
 --- !u!114 &114963405900404982
 MonoBehaviour:
   m_ObjectHideFlags: 1
