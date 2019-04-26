@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class startbutton : MonoBehaviour
 {
     public string scenesenderlocation = "mainscene";
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         SceneManager.LoadScene(scenesenderlocation);
     }
